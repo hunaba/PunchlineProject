@@ -89,6 +89,34 @@ Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix 
 	dblehighfive: 5,
 	points: 31)
 
+Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frère quand il est faux, "
+	punchliner_id: 8,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "J'les baise mais pas sans leur talons, passe le mot à Cendrillon, "
+	punchliner_id: 8,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "Trop de blabla sur azerty, va pas trop loin j't'ai averti, "
+	punchliner_id: 8,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "C'est toujours la même histoire devant les tenues bleues marines, Tout c'qui te donne de l'espoir c'est le traffic de cocaïne "
+	punchliner_id: 8,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
 Punchline.create(content: "ipsem lorum ou faux texte latin, lorem ipsum",
 	punchliner_id: 3,
 	lowfive: 0,
