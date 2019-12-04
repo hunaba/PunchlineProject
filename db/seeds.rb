@@ -18,9 +18,11 @@ require 'faker'
 ## PUNCHLINERS ##
 Punchliner.create(name: "Nicolle", 
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
+	description: "J'aime les gateaux nantais. Le blog de Pop-up est imbitable."
 	email: "cecile.mez@hotmail.fr",
 	password: "123456")
 
+<<<<<<< HEAD
 Punchliner.create(name: "Stormy Bugsy", 
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "youpli@youpla.fr",
@@ -68,6 +70,8 @@ Punchliner.create(name: "Shay",
 	email: "b2o@b2o.fr",
 	password: "1234666")
 	#description: Torchon dans la 'teille
+=======
+>>>>>>> 7382a05951ba5397ea761aabe7af66dc32cd0949
 
 ## PUNCHLINES ##
 Punchline.create(content: "Je ne push jamais le premier soir  #dev #github",
