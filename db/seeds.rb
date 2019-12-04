@@ -21,6 +21,7 @@ Punchliner.create(name: "Nicolle",
 	email: "cecile.mez@hotmail.fr",
 	password: "123456")
 
+
 ## PUNCHLINES ##
 Punchline.create(content: "Je ne push jamais le premier soir  #dev #github",
 	punchliner_id: 1,
