@@ -6,6 +6,7 @@ class DeviseCreateHunters < ActiveRecord::Migration[5.2]
        ## Para nosotros !
       t.string :name
       t.string :avatar
+      t.text :description
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""
