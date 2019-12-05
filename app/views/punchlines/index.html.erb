@@ -1,12 +1,45 @@
-## ici la page d'accueil du site, l'index des punchlines !
-
-punchline.all
-
-###########################################################
-##                                                       ##
-## Le blog de Caro est parfaitement baisable.            ##
-##                                                       ##
-##     >compteur likes<                  96-Belge        ##
-##                                       ^^^^^^^^        ##   le nom du punchliner est cliquable et pointera 
-###########################################################   sur son profil, ou il y aura toutes ses punchlines
-                                                              à lui, voire un petit descriptif s'il le veux.
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<body>
+        <div id="header" class="text-center">
+            <h1>Punchliner</h1>
+            <h3>Créer vos punchlines et soumettez les aux peuples punchliners</h3>
+        </div>
+        <div class="container-fluide mb-5">
+                <h2 class="text-center mt-3">Le Ring</h2>      
+                  <div class="container">        
+                    <div class="column d-flex flex-column">
+                    <% @punchlines.each_with_index do |one_punch, k| %>
+                      <% if k%2 == 0 %>  
+                      <div class="col-lg-8 mt-4" data-aos="fade-right">
+                      <%end%>
+                      <% if k%2 != 0 %> 
+                      <div class="col-lg-8 mt-4 align-self-end" data-aos="fade-left">
+                      <% end %>
+                        <div class="bs-component">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-text text-white"><%= one_punch.content %></h5>
+                              <h7 class="card-title"> <%= one_punch.punchliner.name %></h7>
+                              <div class="d-flex justify-content-between mt-3">
+                                <div class="col-lg-3 d-flex pl-0">
+                                    <a class="mr-1">#bla</a>
+                                    <a class="mr-1">#bla</a>
+                                    <a class="mr-1">#bla</a>
+                                </div>
+                                <div class="col-lg-3 coeur text-right">
+                                    <a class="mr-1">&#9825</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <% end %>                                  
+                    </div>
+                  </div>
+        </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>

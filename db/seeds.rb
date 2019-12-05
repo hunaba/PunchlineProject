@@ -22,7 +22,7 @@ Punchliner.create(name: "Nicolle",
 	email: "cecile.mez@hotmail.fr",
 	password: "123456")
 
-<<<<<<< HEAD
+
 Punchliner.create(name: "Stormy Bugsy", 
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "youpli@youpla.fr",
@@ -162,28 +162,28 @@ Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix 
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frère quand il est faux, "
+Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frère quand il est faux",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "J'les baise mais pas sans leur talons, passe le mot à Cendrillon, "
+Punchline.create(content: "J'les baise mais pas sans leur talons, passe le mot à Cendrillon, ",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Trop de blabla sur azerty, va pas trop loin j't'ai averti, "
+Punchline.create(content: "Trop de blabla sur azerty, va pas trop loin j't'ai averti, ",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "C'est toujours la même histoire devant les tenues bleues marines, Tout c'qui te donne de l'espoir c'est le traffic de cocaïne "
+Punchline.create(content: "C'est toujours la même histoire devant les tenues bleues marines, Tout c'qui te donne de l'espoir c'est le traffic de cocaïne ",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
@@ -197,42 +197,42 @@ Punchline.create(content: "ipsem lorum ou faux texte latin, lorem ipsum",
 	dblehighfive: 0,
 	points: 00)
 
-Punchline.create(content: "Jitsi King, #dev #IT"
+Punchline.create(content: "Jitsi King, #dev #IT",
 	punchliner_id: 3,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Merge Simpson, #dev #IT"
+Punchline.create(content: "Merge Simpson, #dev #IT",
 	punchliner_id: 4,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "La meuf elle voulait du lait je lui ai dit t'as qu'à te taire, #true"
+Punchline.create(content: "La meuf elle voulait du lait je lui ai dit t'as qu'à te taire, #true",
 	punchliner_id: 5,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Sylvester Staline, #people #histoire"
+Punchline.create(content: "Sylvester Staline, #people #histoire",
 	punchliner_id: 4,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Emile Louis et Image, #people #musique"
+Punchline.create(content: "Emile Louis et Image, #people #musique",
 	punchliner_id: 6,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Suffit pas d'être pour exister, suffit pas de partir pour disparaître, "
+Punchline.create(content: "Suffit pas d'être pour exister, suffit pas de partir pour disparaître, ",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,

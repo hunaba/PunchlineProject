@@ -26,7 +26,7 @@ class PunchlinesController < ApplicationController
   end
 
   def index
-
+	@punchlines = Punchline.all
   end
 
 end
