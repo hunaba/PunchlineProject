@@ -68,12 +68,85 @@ Punchliner.create(name: "Booba",
 Punchliner.create(name: "Shay", 
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
-	password: "1234666")
+	password: "1234677")
 	#description: Torchon dans la 'teille
-=======
->>>>>>> 7382a05951ba5397ea761aabe7af66dc32cd0949
+
+Punchliner.create(name: "Charles Darwin", 
+	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
+	email: "b2o@b2o.fr",
+	password: "1234677")
+	#description: Déjà croisé
+
+
+Punchliner.create(name: "Sigisbé Sigismondi", 
+	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
+	email: "b2o@b2o.fr",
+	password: "1234669")
+	#description: Chevalier de la verve
+
+Punchliner.create(name: "Virginie Despentes", 
+	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
+	email: "b2o@b2o.fr",
+	password: "1334669")
+	#description: Chevalier de la verve	
+
+
+
+
 
 ## PUNCHLINES ##
+
+Punchline.create(content: "On croit que les féministes trop radicales haïssent les hommes mais ce qu'elles détestent en réalité ce snt les femmes qui savent vivre avec", 
+	punchliner_id: 10,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+
+Punchline.create(content: ",Moins de mâle, moins de guerre #??",
+	punchliner_id: 10,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "C'était une véritable religion le silence chez cet homme, on appelle ça de la pudeur, mais cela relève plutôt de la constipation verbale #wet",
+	punchliner_id: 10,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "Mon désir pour toi s'est écoulé comme le sang de mon vagin #wet",
+	punchliner_id: 9,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "Je vois peu de femmes malheureuses d'être maman, j'en vois beaucoup malheureuses de ne pas l'être #bullshit #tabou",
+	punchliner_id: 9,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+
+Punchline.create(content: "La lascivité est rattachée à la féminité, sauf si tu es gay j'imagine #bullshit",
+	punchliner_id: 9,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "Je ne délie pas la biologie de la place d'un individu dans la société #bullshit",
+	punchliner_id: 9,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
 Punchline.create(content: "Je ne push jamais le premier soir  #dev #github",
 	punchliner_id: 1,
 	lowfive: 0,
@@ -176,3 +249,5 @@ Hashtag.create(title: '#musique')
 Hashtag.create(title: "#histoire")
 Hashtag.create(title: '#IT')
 Hashtag.create(title: '#true')
+Hashtag.create(title: '#bullshit')
+Hashtag.create(title: '#tabou')
