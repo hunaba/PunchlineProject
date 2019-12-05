@@ -7,6 +7,8 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'jquery'
 
+gem "font-awesome-rails"
+
 gem 'table_print'
 gem 'devise'
 gem 'faker'
