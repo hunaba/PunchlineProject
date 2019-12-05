@@ -1,11 +1,13 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://kit.fontawesome.com/0f6d2693a2.js" crossorigin="anonymous"></script>
 <body>
-        <div id="header" class="text-center">
+        <div id="header" class="text-center text-white">
             <h1>Punchliner</h1>
             <h3>Créer vos punchlines et soumettez les aux peuples punchliners</h3>
+            <%= image_tag('arrow-alt-circle-down-solid.svg', draggable: "true", id: "logo") %>
         </div>
         <div class="container-fluide mb-5">
-                <h2 class="text-center mt-3">Le Ring</h2>      
+                <h1 class="text-center mt-3 text-white">Le Ring</h1>   
                   <div class="container">        
                     <div class="column d-flex flex-column">
                     <% @punchlines.each_with_index do |one_punch, k| %>
@@ -16,7 +18,7 @@
                       <div class="col-lg-8 mt-4 align-self-end" data-aos="fade-left">
                       <% end %>
                         <div class="bs-component">
-                          <div class="card">
+                          <div class="card border border-white">
                             <div class="card-body">
                               <h5 class="card-text text-white"><%= one_punch.content %></h5>
                               <h7 class="card-title"> <%= one_punch.punchliner.name %></h7>
@@ -26,8 +28,10 @@
                                     <a class="mr-1">#bla</a>
                                     <a class="mr-1">#bla</a>
                                 </div>
-                                <div class="col-lg-3 coeur text-right">
-                                    <a class="mr-1">&#9825</a>
+                                <div class="col-lg-3 text-right">
+                                    <a class="mr-1"><i class="fas fa-hand-middle-finger"></i></a>
+                                    <a class="mr-1"><i class="far fa-hand-paper"></i></a>
+                                    <a class="mr-1"><i class="far fa-hand-rock"></i></a>
                                 </div>
                               </div>
                             </div>
