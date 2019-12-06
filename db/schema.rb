@@ -63,10 +63,10 @@ ActiveRecord::Schema.define(version: 2019_12_04_144507) do
   create_table "punchlines", force: :cascade do |t|
     t.text "content"
     t.bigint "punchliner_id"
-    t.integer "lowfive"
-    t.integer "highfive"
-    t.integer "dblehighfive"
-    t.integer "points"
+    t.integer "lowfive", default: 0
+    t.integer "highfive", default: 0
+    t.integer "dblehighfive", default: 0
+    t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["punchliner_id"], name: "index_punchlines_on_punchliner_id"

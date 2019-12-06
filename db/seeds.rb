@@ -71,8 +71,6 @@ Punchliner.create(name: "Shay",
 	#description: Torchon dans la 'teille
 
 
-
-
 Punchliner.create(name: "Sigisbé Sigismondi", 
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
@@ -184,7 +182,8 @@ Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix 
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frère quand il est faux, ",
+
+Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frère quand il est faux",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
