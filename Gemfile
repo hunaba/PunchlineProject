@@ -3,6 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'jquery'
+
+gem "font-awesome-rails"
+
 gem 'table_print'
 gem 'devise'
 gem 'faker'
@@ -65,5 +71,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 gem 'dotenv-rails'
 gem 'sendgrid-ruby'
+gem 'letter_opener'

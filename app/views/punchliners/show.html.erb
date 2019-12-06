@@ -1,13 +1,23 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://kit.fontawesome.com/0f6d2693a2.js" crossorigin="anonymous"></script>
-<body>
-        <div id="header" class="text-center text-white">
-            <h1>Punchliner</h1>
-            <h3>Créer vos punchlines et soumettez les aux peuples punchliners</h3>
-            <%= image_tag('arrow-alt-circle-down-solid.svg', draggable: "true", id: "logo") %>
-        </div>
-        <div class="container-fluide mb-5">
-                <h1 class="text-center mt-3 text-white">Le Ring</h1>   
+
+
+<div class="card profil mb-3" style="max-width: 840px;">
+<div class="row no-gutters">
+    <div class="col-md-4">
+    <img src=@punchliner.avatar class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+    <div class="card-body">
+        <h5 class="card-title"><%= @punchliner.name %></h5>
+        <p class="card-text"><%= @punchliner.description %></p>
+        <p class="card-text">Contact: <%= @punchliner.email %></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="container-fluide mb-5">
+                <h1 class="text-center mt-3 text-white">Les Punchiles de <%= @punchliner.name %></h1>   
                   <div class="container">        
                     <div class="column d-flex flex-column">
                     <% @punchlines.each_with_index do |one_punch, k| %>
@@ -32,7 +42,7 @@
                         <% end %>
                             <div class="card-body">
                               <i class="fas fa-quote-right"></i>
-                              <h5 class="card-text text-white"><%= rate(one_punch) %></h5>
+                              <h5 class="card-text text-white"><%= one_punch.content %></h5>
                               <a class="btn btn-primary mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
                               <div class="d-flex justify-content-between mt-3">
                                 <div class="col-lg-3 d-flex pl-0">
@@ -58,4 +68,3 @@
   <script>
     AOS.init();
   </script>
-</body>
