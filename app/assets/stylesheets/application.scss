@@ -20,7 +20,7 @@
 
  body
 {
-    background: url("images/photo_fond.jpeg");
+    background: url("photo_fond.jpeg");
     background-repeat: no-repeat;
     background-attachment : fixed;
     background-size: cover;
@@ -42,6 +42,12 @@
 #logo{
     width: 100px;
     height: 100px;
+}
+
+#edit{
+    position: fixed;
+    top: 2em;
+    left: 1em;
 }
 
 
