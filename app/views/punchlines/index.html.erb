@@ -35,7 +35,6 @@
                 </div>
               </div>
             </div>
-            <%= image_tag('arrow-alt-circle-down-solid.svg', draggable: "true", id: "logo") %>
         </div>
         <div class="container-fluide mb-5">
                 <h1 class="text-center mt-3 text-white">Le Ring</h1>   
@@ -49,22 +48,32 @@
                       <div class="col-lg-8 mt-4 align-self-end" data-aos="fade-left">
                       <% end %>
                         <div class="bs-component">
-                        <% if rate(one_punch) == "low" %>
-                          <div class="card border green border-success">
-                        <% end %>
-                        <% if rate(one_punch) == "high" %>
-                          <div class="card border yellow border-warning">
-                        <% end %>
-                        <% if rate(one_punch) == "double" %>
-                          <div class="card border red border-danger">
-                        <% end %>
-                        <% if rate(one_punch) == "no-like" %>
-                          <div class="card border no-like border-white">
-                        <% end %>
+                        
+                          <div class="card">
+                      
                             <div class="card-body">
-                              <i class="fas fa-quote-right"></i>
-                              <h5 class="card-text text-white"><%= one_punch.content %></h5>
-                              <a class="btn btn-primary mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
+                              <div class="d-flex justify-content-between">
+                                <div class="col-8">
+                                  <i class="fas fa-quote-right"></i>
+                                  <h5 class="card-text text-white"><%= one_punch.content %></h5>
+                                </div>
+
+                                <% if rate(one_punch) == "low" %>
+                                  <div class="col-2 avatar-green">
+                                <% end %>
+                                <% if rate(one_punch) == "high" %>
+                                  <div class="col-2 avatar-yellow">
+                                <% end %>
+                                <% if rate(one_punch) == "double" %>
+                                  <div class="col-2 avatar-red">
+                                <% end %>
+                                <% if rate(one_punch) == "no-like" %>
+                                  <div class="col-2 avatar">
+                                <% end %>
+                                   <%= image_tag('Smyhavy.png', draggable: "true", id: "logo") %> 
+                                  </div>
+                              </div>
+                              <a class="btn btn-info mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
                               <div class="d-flex justify-content-between mt-3">
                                 <div class="col-lg-3 d-flex pl-0">
                                     <a class="mr-1">#bla</a>
