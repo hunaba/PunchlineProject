@@ -81,9 +81,9 @@
                                     <a class="mr-1">#bla</a>
                                 </div>
                                 <div class="col-lg-3 text-right">
-                                    <a class="mr-1"><i class="fas fa-hand-middle-finger"></i></a>
-                                    <a class="mr-1"><i class="far fa-hand-paper"></i></a>
-                                    <a class="mr-1"><i class="far fa-hand-rock"></i></a>
+                                    <a class="mr-1"><i class="fas fa-hand-middle-finger"></i><%= button_to 'Like', post_likes_path(@post), method: :post %></a>
+                                    <a class="mr-1"><i class="far fa-hand-paper"></i><%= button_to 'Like', post_likes_path(@post), method: :post %></a>
+                                    <a class="mr-1"><i class="far fa-hand-rock"></i><%= button_to 'Like', post_likes_path(@post), method: :post %></a>
                                 </div>
                               </div>
                             </div>
