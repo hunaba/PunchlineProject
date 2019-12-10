@@ -1,11 +1,11 @@
-<nav class="navbar fixed-top navbar-expand-md transparent fixed-top-2">
+<nav class="navbar fixed-top navbar-expand-md transparent fixed-top-2">  <!-- Pourquoi la navbar est pas collée en haut ? -->
 
   <% if current_punchliner == nil && current_striker == nil && current_hunter == nil%>
 
   <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
-      <button type="button" class="btn btn-secondary">Connexion</button>
-      </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+            <div><%= image_tag("user.svg") %></div>     <!-- il faut mettre l'image en booooooocoup plus petit....deso -->
+          </a>
       <div class="dropdown-menu" x-placement="bottom-start">
           <a class="dropdown-item" href="<%= new_punchliner_registration_path %>">Se connecter en tant que Punchliner</a>
           <a class="dropdown-item" href="<%= new_hunter_registration_path %>">Se connecter en tant que Hunter</a>
@@ -13,40 +13,11 @@
       </div>
   </div>
 
-
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
-        <li class="user">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div><%= image_tag("user.svg") %></div>
-          </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="<%= new_punchliner_registration_path %>">Se connecter en tant que Punchliner</a>
-          <a class="dropdown-item" href="<%= new_hunter_registration_path %>">Se connecter en tant que Hunter</a>
-          <a class="dropdown-item" href="<%= new_striker_registration_path %>">Se connecter en tant que Striker</a>
-        </div>
-       </li>
-      </ul>
-    </div>
-  <!-- </nav> -->
-
-<% else %>
-
- <!-- <nav class="navbar navbar-expand-md transparent fixed-top-2"> -->
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
-        <li class="user">
-          <a href="<%= root_path %>" data-toggle="modal" data-target="#modalLRForm"><div><%= image_tag("user.svg") %></div></a>
-        </li>
-      </ul>
-    </div>
-<!--  </nav> --> 
-
 <% end %>
 
 
 <!-- <nav class="navbar navbar-expand-md transparent"> -->
-    <div><%= image_tag("logo.svg", size: "50x50", class: "img-fluid", alt: "Responsive image") %></div>
+    <div><%= image_tag("logo.svg", size: "50x50", class: "img-fluid", alt: "Responsive image") %></div> <!-- mettre lien vers root_path -->
     <div class="nav-link">
       <a class="btn btn-secondary" type="button" href="<%= punchliners_index_path %>">Par Auteur</a>
     </div>
