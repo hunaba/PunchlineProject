@@ -1,4 +1,4 @@
-<% if current_punchliner == nil %>
+<% if current_punchliner == nil || current_striker == nil || current_hunter == nil%>
 <nav class="navbar fixed-top navbar-expand-md transparent fixed-top-2">
   <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto">
@@ -7,9 +7,9 @@
           <div><%= image_tag("user.svg") %></div>
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLRForm">Punchliner</a>
-        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLRForm">Hunter</a>
-        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLRForm">Striker</a>
+        <a class="dropdown-item" href="<%= new_punchliner_registration_path %>">Se connecter en tant que Punchliner</a>
+        <a class="dropdown-item" href="<%= new_hunter_registration_path %>" >Se connecter en tant que Hunter</a>
+        <a class="dropdown-item" href="<%= new_striker_registration_path %>">Se connecter en tant que Striker</a>
       </div>
         </li>
       </ul>
@@ -30,34 +30,69 @@
 
 <nav class="navbar navbar-expand-md transparent">
         <div><%= image_tag("logo.svg", size: "50x50", class: "img-fluid", alt: "Responsive image") %></div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-    Auteur
-  </button>
-  <div class="dropdown-menu">
-    <% @punchlines.each_with_index do |punch| %>
-    <a class="dropdown-item" href="#"><%= link_to punch.punchliner.name %></a>
-    <% end %>
-  </div>
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-    Thème
-  </button>
-  <div class="dropdown-menu">
-    <% @punchlines.each_with_index do |punch| %>
-    <a class="dropdown-item" href="#"><%= %></a>
-    <% end %>
-  </div>
-    <button class="btn btn-secondary" type="button" data-toggle="">
-    Aléatoire
-  </button>
-    <button class="btn btn-secondary" type="button" data-toggle="">
-    Date
-  </button>
+<div class="nav-link">
+  <a class="btn btn-secondary" type="button" href="<%= punchliners_index_path %>">Par Auteur</a>
 </div>
+
+<div class="nav-link">
+  <a class="btn btn-secondary" type="button" href="<%= hashtags_index_path %>">Par Thème</a>
+</div>
+
+ <div class="nav-link">
+    <button class="btn btn-secondary" type="button" data-toggle="" href="#">
+             Aléatoire
+    </button>
+    <button class="btn btn-secondary" type="button" data-toggle="" href="#">
+             + Récent
+    </button>
+</div>
+
+  <% if punchliner_signed_in? %>
+
+    <div class="nav-item dropdown ">
+
+      <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+      <button type="button" class="btn btn-primary">Mon Compte</button>
+      </a>
+
+      <div class="dropdown-menu " x-placement="bottom-start">
+        <a class="dropdown-item" href="<%= edit_punchliner_registration_path %>">Profil</a>
+        <a class="dropdown-item" <%= link_to('Deconnexion', destroy_punchliner_session_path, method: :delete) %>> </a>     
+      </div>
+
+    </div>
+  
+
+  <% elsif striker_signed_in? %>
+    <div class="nav-item dropdown ">
+ 
+      <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+      <button type="button" class="btn btn-primary">Mon Compte</button>
+      </a>
+      <div class="dropdown-menu " x-placement="bottom-start">
+        <a class="dropdown-item" href="<%= edit_striker_registration_path %>">Profil</a>
+
+        <a class="dropdown-item" <%= link_to('Deconnexion', destroy_striker_session_path, method: :delete) %>> </a>     
+      </div>
+    </div>
+
+  <% elsif hunter_signed_in? %>
+
+   <div class="nav-item dropdown ">
+
+      <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+      <button type="button" class="btn btn-primary">Mon Compte</button>
+      </a>
+      <div class="dropdown-menu " x-placement="bottom-start">
+ 
+      <a class="dropdown-item" href="<%= edit_hunter_registration_path %>">Profil</a>
+
+      <a class="dropdown-item" <%= link_to('Deconnexion', destroy_hunter_session_path, method: :delete) %>> </a>    
+      </div>
+   </div>
 </nav>
-
-
-
+  <% else %>
+<nav  class="navbar navbar-expand-md transparent">
 <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog cascading-modal" role="document">
     <!--Content-->
@@ -77,13 +112,14 @@
               Register</a>
           </li>
         </ul>
-
-        <!-- Tab panels -->
+  <% end %>
+</nav>
+        <!-- Tab panels 
         <div class="tab-content">
-          <!--Panel 7-->
+          <!--Panel 7
           <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
-            <!--Body-->
+            <!--Body
             <div class="modal-body mb-1">
               <div class="md-form form-sm mb-5">
                 <i class="fas fa-envelope prefix"></i>
@@ -100,7 +136,7 @@
                 <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
               </div>
             </div>
-            <!--Footer-->
+            <!--Footer
             <div class="modal-footer">
               <div class="options text-center text-md-right mt-1">
                 <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
@@ -112,10 +148,10 @@
           </div>
           <!--/.Panel 7-->
 
-          <!--Panel 8-->
+          <!--Panel 8
           <div class="tab-pane fade" id="panel8" role="tabpanel">
 
-            <!--Body-->
+            <!--Body
             <div class="modal-body">
               <div class="md-form form-sm mb-5">
                 <i class="fas fa-envelope prefix"></i>
@@ -140,7 +176,7 @@
               </div>
 
             </div>
-            <!--Footer-->
+            <!--Footer
             <div class="modal-footer">
               <div class="options text-right">
                 <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
@@ -148,11 +184,11 @@
               <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
             </div>
           </div>
-          <!--/.Panel 8-->
+          <!--/.Panel 8
         </div>
 
       </div>
     </div>
-    <!--/.Content-->
+    <!--/.Content-
   </div>
-</div>
+</div> -->

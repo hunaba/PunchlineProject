@@ -8,6 +8,12 @@ Rails.application.routes.draw do
   resource :punchlines, except: [:show, :new, :update, :destroy] do
   	resource :likes
   end
+  resource :punchliners
+
+  get 'punchlinersS', to: "punchliners#index", as: 'punchliners_index'
+  get 'hashtagsS', to: "hashtags#index", as: 'hashtags_index'
+
+  resource :hashtag, only: [:show]
 
 root to: "punchlines#index" 
 end
