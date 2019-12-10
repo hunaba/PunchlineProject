@@ -40,4 +40,18 @@ class PunchlinesController < ApplicationController
 	@punchlines = Punchline.all
   end
 
+  def destroy
+	puts params
+	puts params[:format]
+	@punchline = Punchline.find(params[:format])
+
+	if @punchline.delete
+		puts "Punchline delete"
+		@punchlines = Punchline.all
+		redirect_to punchliners_id_path(@punchline.punchliner.id)
+	  else
+		render '/'
+		puts "Raté"
+	  end
+  end
 end

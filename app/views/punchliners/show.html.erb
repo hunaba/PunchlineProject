@@ -40,6 +40,9 @@
                         <% if rate(one_punch) == "no-like" %>
                           <div class="card border no-like border-white">
                         <% end %>
+                            <%= form_tag punchlines_path(one_punch.id), method: "delete" do %>
+                              <%= submit_tag "Supprimer", class: 'btn btn-danger delete'%>
+                            <% end %>
                             <div class="card-body">
                               <i class="fas fa-quote-right"></i>
                               <h5 class="card-text text-white"><%= one_punch.content %></h5>
