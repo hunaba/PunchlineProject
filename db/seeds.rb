@@ -253,7 +253,7 @@ Punchline.create(content: "Emile Louis et Image, #people #musique",
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Suffit pas d'être pour exister, suffit pas de partir pour disparaître, ",
+Punchline.create(content: "Suffit pas d'être pour exister, suffit pas de partir pour disparaître",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,

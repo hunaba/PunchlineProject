@@ -4,7 +4,37 @@
         <div id="header" class="text-center text-white">
             <h1>Punchliner</h1>
             <h3>Créer vos punchlines et soumettez les aux peuples punchliners</h3>
-            <%= image_tag('arrow-alt-circle-down-solid.svg', draggable: "true", id: "logo") %>
+            
+            <button type="button" class="btn btn-primary" id="edit" data-toggle="modal" data-target="#exampleModalCenter">
+              Editer sa punchline
+            </button>
+
+            
+            <div class="modal fade text-dark" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Préparez-vous au combat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <%= form_tag url_for(action:'create'), method: "post" do %>
+              
+                    <%= label_tag 'Content' %><br>
+                    <%= text_area_tag 'content' %>
+                    <br /> <br />
+              
+                    <div class="text-center">
+                        <%= submit_tag("Que le combat commence !", class: "btn btn-primary btn-lg") %>
+                    </div>
+              
+                  <% end %>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="container-fluide mb-5">
                 <h1 class="text-center mt-3 text-white">Le Ring</h1>   
@@ -18,22 +48,32 @@
                       <div class="col-lg-8 mt-4 align-self-end" data-aos="fade-left">
                       <% end %>
                         <div class="bs-component">
-                        <% if rate(one_punch) == "low" %>
-                          <div class="card border green border-success">
-                        <% end %>
-                        <% if rate(one_punch) == "high" %>
-                          <div class="card border yellow border-warning">
-                        <% end %>
-                        <% if rate(one_punch) == "double" %>
-                          <div class="card border red border-danger">
-                        <% end %>
-                        <% if rate(one_punch) == "no-like" %>
-                          <div class="card border no-like border-white">
-                        <% end %>
+                        
+                          <div class="card">
+                      
                             <div class="card-body">
-                              <i class="fas fa-quote-right"></i>
-                              <h5 class="card-text text-white"><%= rate(one_punch) %></h5>
-                              <a class="btn btn-primary mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
+                              <div class="d-flex justify-content-between">
+                                <div class="col-8">
+                                  <i class="fas fa-quote-right"></i>
+                                  <h5 class="card-text text-white"><%= one_punch.content %></h5>
+                                </div>
+
+                                <% if rate(one_punch) == "low" %>
+                                  <div class="col-2 avatar-green">
+                                <% end %>
+                                <% if rate(one_punch) == "high" %>
+                                  <div class="col-2 avatar-yellow">
+                                <% end %>
+                                <% if rate(one_punch) == "double" %>
+                                  <div class="col-2 avatar-red">
+                                <% end %>
+                                <% if rate(one_punch) == "no-like" %>
+                                  <div class="col-2 avatar">
+                                <% end %>
+                                   <%= image_tag('Smyhavy.png', draggable: "true", id: "logo") %> 
+                                  </div>
+                              </div>
+                              <a class="btn btn-info mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
                               <div class="d-flex justify-content-between mt-3">
                                 <div class="col-lg-3 d-flex pl-0">
                                     <a class="mr-1">#bla</a>
@@ -41,9 +81,9 @@
                                     <a class="mr-1">#bla</a>
                                 </div>
                                 <div class="col-lg-3 text-right">
-                                    <a class="mr-1"><i class="fas fa-hand-middle-finger"></i></a>
-                                    <a class="mr-1"><i class="far fa-hand-paper"></i></a>
-                                    <a class="mr-1"><i class="far fa-hand-rock"></i></a>
+                                    <a class="mr-1"><i class="fas fa-hand-middle-finger"></i><%= button_to 'Like', post_likes_path(@post), method: :post %></a>
+                                    <a class="mr-1"><i class="far fa-hand-paper"></i><%= button_to 'Like', post_likes_path(@post), method: :post %></a>
+                                    <a class="mr-1"><i class="far fa-hand-rock"></i><%= button_to 'Like', post_likes_path(@post), method: :post %></a>
                                 </div>
                               </div>
                             </div>

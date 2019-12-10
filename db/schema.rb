@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_04_144507) do
+ActiveRecord::Schema.define(version: 2019_12_09_143927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,15 @@ ActiveRecord::Schema.define(version: 2019_12_04_144507) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_hunters_on_email", unique: true
     t.index ["reset_password_token"], name: "index_hunters_on_reset_password_token", unique: true
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.bigint "punchline_id"
+    t.bigint "striker_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["punchline_id"], name: "index_likes_on_punchline_id"
+    t.index ["striker_id"], name: "index_likes_on_striker_id"
   end
 
   create_table "link_hashtag_punchlines", force: :cascade do |t|
@@ -86,6 +95,8 @@ ActiveRecord::Schema.define(version: 2019_12_04_144507) do
     t.index ["reset_password_token"], name: "index_strikers_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "likes", "punchlines"
+  add_foreign_key "likes", "strikers"
   add_foreign_key "link_hashtag_punchlines", "hashtags"
   add_foreign_key "link_hashtag_punchlines", "punchlines"
 end
