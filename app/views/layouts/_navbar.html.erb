@@ -1,6 +1,19 @@
-<% if current_punchliner == nil && current_striker == nil && current_hunter == nil%>
+<nav class="navbar fixed-top navbar-expand-md transparent fixed-top-2">
 
- <nav class="navbar fixed-top navbar-expand-md transparent fixed-top-2">
+  <% if current_punchliner == nil && current_striker == nil && current_hunter == nil%>
+
+  <div class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+      <button type="button" class="btn btn-secondary">Connexion</button>
+      </a>
+      <div class="dropdown-menu" x-placement="bottom-start">
+          <a class="dropdown-item" href="<%= new_punchliner_registration_path %>">Se connecter en tant que Punchliner</a>
+          <a class="dropdown-item" href="<%= new_hunter_registration_path %>">Se connecter en tant que Hunter</a>
+          <a class="dropdown-item" href="<%= new_striker_registration_path %>">Se connecter en tant que Striker</a>
+      </div>
+  </div>
+
+
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto">
         <li class="user">
@@ -15,52 +28,53 @@
        </li>
       </ul>
     </div>
-  </nav>
+  <!-- </nav> -->
 
 <% else %>
 
-  <nav class="navbar navbar-expand-md transparent fixed-top-2">
+ <!-- <nav class="navbar navbar-expand-md transparent fixed-top-2"> -->
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto">
         <li class="user">
-          <a href="" data-toggle="modal" data-target="#modalLRForm"><div><%= image_tag("user.svg") %><div>10</div></div></a>
+          <a href="<%= root_path %>" data-toggle="modal" data-target="#modalLRForm"><div><%= image_tag("user.svg") %></div></a>
         </li>
       </ul>
     </div>
-  </nav> 
+<!--  </nav> --> 
 
 <% end %>
 
 
-<nav class="navbar navbar-expand-md transparent">
-        <div><%= image_tag("logo.svg", size: "50x50", class: "img-fluid", alt: "Responsive image") %></div>
-   <div class="nav-link">
-     <a class="btn btn-secondary" type="button" href="<%= punchliners_index_path %>">Par Auteur</a>
-   </div>
+<!-- <nav class="navbar navbar-expand-md transparent"> -->
+    <div><%= image_tag("logo.svg", size: "50x50", class: "img-fluid", alt: "Responsive image") %></div>
+    <div class="nav-link">
+      <a class="btn btn-secondary" type="button" href="<%= punchliners_index_path %>">Par Auteur</a>
+    </div>
 
-   <div class="nav-link">
-     <a class="btn btn-secondary" type="button" href="<%= hashtags_index_path %>">Par Thème</a>
-   </div>
+    <div class="nav-link">
+      <a class="btn btn-secondary" type="button" href="<%= hashtags_index_path %>">Par Thème</a>
+    </div>
 
-   <div class="nav-link">
-     <button class="btn btn-secondary" type="button" data-toggle="" href="#">
+    <div class="nav-link">
+      <button class="btn btn-secondary" type="button" data-toggle="" href="#">
              Aléatoire
-     </button>
- 
-     <button class="btn btn-secondary" type="button" data-toggle="" href="#">
-             + Récent
-     </button>
-   </div>
+      </button>
+    </div>
+    <div>
+      <button class="btn btn-secondary" type="button" data-toggle="" href="#">
+              + Récent
+      </button>
+    </div>
 
   <% if punchliner_signed_in? %>
 
-    <div class="nav-item dropdown ">
+    <div class="nav-item dropdown">
 
        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
        <button type="button" class="btn btn-primary">Mon Compte</button>
        </a>
 
-       <div class="dropdown-menu " x-placement="bottom-start">
+       <div class="dropdown-menu" x-placement="bottom-start">
          <a class="dropdown-item" href="<%= edit_punchliner_registration_path %>">Profil</a>
          <a class="dropdown-item" <%= link_to('Deconnexion', destroy_punchliner_session_path, method: :delete) %>> </a>     
        </div>
@@ -70,13 +84,13 @@
 
   <% elsif striker_signed_in? %>
 
-    <div class="nav-item dropdown ">
+    <div class="nav-item dropdown">
  
-       <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
        <button type="button" class="btn btn-primary">Mon Compte</button>
        </a>
      
-       <div class="dropdown-menu " x-placement="bottom-start">
+       <div class="dropdown-menu" x-placement="bottom-start">
           <a class="dropdown-item" href="<%= edit_striker_registration_path %>">Profil</a>
           <a class="dropdown-item" <%= link_to('Deconnexion', destroy_striker_session_path, method: :delete) %>> </a>     
       </div>
@@ -84,26 +98,26 @@
 
   <% elsif hunter_signed_in? %>
 
-   <div class="nav-item dropdown ">
+   <div class="nav-item dropdown">
 
-       <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
        <button type="button" class="btn btn-primary">Mon Compte</button>
        </a>
 
-      <div class="dropdown-menu " x-placement="bottom-start"> 
+      <div class="dropdown-menu" x-placement="bottom-start"> 
         <a class="dropdown-item" href="<%= edit_hunter_registration_path %>">Profil</a>
         <a class="dropdown-item" <%= link_to('Deconnexion', destroy_hunter_session_path, method: :delete) %>> </a>    
       </div>
    </div>
-</nav>
+<!-- </nav> -->
 
   <% else %>
 
-<nav  class="navbar navbar-expand-md transparent">
+<!-- <nav  class="navbar navbar-expand-md transparent"> -->
   <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog cascading-modal" role="document">
       <!--Content-->
-        <div class="modal-content">
+       <div class="modal-content">
 
         <!--Modal cascading tabs-->
           <div class="modal-c-tabs">
@@ -118,8 +132,15 @@
                   <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>Register</a>
                </li>
              </ul>
-  <% end %>
+          </div>
+       </div>
+    </div>
+  </div>
+
+<% end %>
+
 </nav>
+
         <!-- Tab panels 
         <div class="tab-content">
           <!--Panel 7
