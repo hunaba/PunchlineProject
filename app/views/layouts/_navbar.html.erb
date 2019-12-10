@@ -1,7 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-md transparent">  <!-- Pourquoi la navbar est pas collée en haut ? -->
-
-  <% if current_punchliner == nil && current_striker == nil && current_hunter == nil%>
   <div id="logo-accueil"><a href="<%= root_path %>"><%= image_tag("logo.svg") %></a></div>
+  <% if current_punchliner == nil && current_striker == nil && current_hunter == nil%>
   <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
             <div>Se connecter</div>     <!-- il faut mettre l'image en booooooocoup plus petit....deso -->
