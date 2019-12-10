@@ -1,39 +1,62 @@
-<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <div><%= image_tag("logo.svg", size: "50x50", class: "img-fluid", alt: "Responsive image") %></div>
-        </li>
-    </ul>
-  </div>
-
-  <div class="mx-auto order-0">
-    <form action="#" id="header_search_form">
-	  	<input type="text" class="search_input" placeholder="Search Punchline" required="required">
-	  	<button class="header_search_button"><%= image_tag("search.png") %></button>
-		</form>
-	</div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    
+<% if current_punchliner == nil %>
+<nav class="navbar fixed-top navbar-expand-md transparent fixed-top-2">
   <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-    <% if current_punchliner == nil %>
+      <ul class="navbar-nav ml-auto">
+        <li class="user">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div><%= image_tag("user.svg") %></div>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLRForm">Punchliner</a>
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLRForm">Hunter</a>
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLRForm">Striker</a>
+      </div>
+        </li>
+      </ul>
+  </div>
+</nav>
+<% else %>
+<nav class="navbar navbar-expand-md transparent fixed-top-2">
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto">
         <li class="user">
           <a href="" data-toggle="modal" data-target="#modalLRForm"><div><%= image_tag("user.svg") %><div>10</div></div></a>
         </li>
       </ul>
+  </div>
+</nav> 
+<% end %>
 
-    <% else %>
-      <ul class="navbar-nav ml-auto">
-        <li class="user">
-          <a href="" data-toggle="modal" data-target="#modalLRForm"><div><%= image_tag("user.svg") %><div>10</div></div></a>
-        </li>
-      </ul> 
+
+<nav class="navbar navbar-expand-md transparent">
+        <div><%= image_tag("logo.svg", size: "50x50", class: "img-fluid", alt: "Responsive image") %></div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+    Auteur
+  </button>
+  <div class="dropdown-menu">
+    <% @punchlines.each_with_index do |punch| %>
+    <a class="dropdown-item" href="#"><%= link_to punch.punchliner.name %></a>
     <% end %>
   </div>
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+    Thème
+  </button>
+  <div class="dropdown-menu">
+    <% @punchlines.each_with_index do |punch| %>
+    <a class="dropdown-item" href="#"><%= %></a>
+    <% end %>
+  </div>
+    <button class="btn btn-secondary" type="button" data-toggle="">
+    Aléatoire
+  </button>
+    <button class="btn btn-secondary" type="button" data-toggle="">
+    Date
+  </button>
+</div>
 </nav>
+
+
 
 <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog cascading-modal" role="document">
