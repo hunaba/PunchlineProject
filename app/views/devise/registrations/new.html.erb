@@ -28,7 +28,8 @@
               <%= f.label :email, "Email" %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder:"Email Address", onfocus:"this.placeholder = ''", onblur:"this.placeholder = 'Email Address'" %>		
               </div>
-              <div class="col-md-12 form-group">
+               
+             <div class="col-md-12 form-group">
               <%= f.label :password %>
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -46,7 +47,8 @@
               <em> By clicking on Sign up, you accept our <a href="">Terms and Conditions</a>.</em>
              <br>
 							<div class="col-md-12 form-group action">
-               <%= f.submit "Sign up" , class:"button button-register w-100" %>
+             <%= f.submit "Sign up" , class:"button button-register w-100" %>-->
+              
 							</div>
 					<% end %>
       <%= render "devise/shared/links" %>
