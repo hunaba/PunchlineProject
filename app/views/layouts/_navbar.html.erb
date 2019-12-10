@@ -1,10 +1,10 @@
-<nav class="navbar fixed-top navbar-expand-md transparent fixed-top-2">  <!-- Pourquoi la navbar est pas collée en haut ? -->
+<nav class="navbar fixed-top navbar-expand-md transparent">  <!-- Pourquoi la navbar est pas collée en haut ? -->
 
   <% if current_punchliner == nil && current_striker == nil && current_hunter == nil%>
-
+  <div id="logo-accueil"><a href="<%= root_path %>"><%= image_tag("logo.svg") %></a></div>
   <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-            <div><%= image_tag("user.svg") %></div>     <!-- il faut mettre l'image en booooooocoup plus petit....deso -->
+            <div>Se connecter</div>     <!-- il faut mettre l'image en booooooocoup plus petit....deso -->
           </a>
       <div class="dropdown-menu" x-placement="bottom-start">
           <a class="dropdown-item" href="<%= new_punchliner_registration_path %>">Se connecter en tant que Punchliner</a>
@@ -14,29 +14,6 @@
   </div>
 
 <% end %>
-
-
-<!-- <nav class="navbar navbar-expand-md transparent"> -->
-    <div><%= image_tag("logo.svg", size: "50x50", class: "img-fluid", alt: "Responsive image") %></div> <!-- mettre lien vers root_path -->
-    <div class="nav-link">
-      <a class="btn btn-secondary" type="button" href="<%= punchliners_index_path %>">Par Auteur</a>
-    </div>
-
-    <div class="nav-link">
-      <a class="btn btn-secondary" type="button" href="<%= hashtags_index_path %>">Par Thème</a>
-    </div>
-
-    <div class="nav-link">
-      <button class="btn btn-secondary" type="button" data-toggle="" href="#">
-             Aléatoire
-      </button>
-    </div>
-    <div>
-      <button class="btn btn-secondary" type="button" data-toggle="" href="#">
-              + Récent
-      </button>
-    </div>
-
   <% if punchliner_signed_in? %>
 
     <div class="nav-item dropdown">
