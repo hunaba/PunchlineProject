@@ -5,6 +5,11 @@ Rails.application.routes.draw do
 
   get 'punchliners/:id', to: "punchliners#show", as: 'punchliners_id'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resource :punchlines, except: [:show, :new, :update]
+
+  resource :punchlines, only: [:destroy]
+
+  resource :punchlines, except: [:show, :new, :update] do
+  	resource :likes
+  end
 root to: "punchlines#index" 
 end
