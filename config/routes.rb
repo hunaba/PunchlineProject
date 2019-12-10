@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :room_messages
+  resources :rooms
   devise_for :hunters
   devise_for :strikers
   devise_for :punchliners
@@ -10,4 +12,8 @@ Rails.application.routes.draw do
   end
 
 root to: "punchlines#index" 
+root controller: :rooms, action: :index
+resources :room_messages
+resources :rooms
+
 end
