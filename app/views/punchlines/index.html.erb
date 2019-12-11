@@ -6,7 +6,7 @@
             <h3>Ici, exceptionnellement...plus c'est court, mieux c'est !</h3>
 
             <% if punchliner_signed_in? %>
-             <button type="button" class="btn btn-primary" id="edit" data-toggle="modal" data-target="#exampleModalCenter">   Editer sa punchline    </button>
+             <button type="button" class="btn btn-primary" id="edit" data-toggle="modal" data-target="#exampleModalCenter"> Editer sa punchline </button>
             <% end %>
             <div class="modal fade text-dark" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -89,7 +89,7 @@
                                    <%= image_tag('Smyhavy.png', draggable: "true", id: "logo") %> 
                                   </div>
                               </div>
-                              <a class="btn bouton-cart mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
+                              <a class="btn bouton-cart mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%>></a>
                               <div class="d-flex justify-content-between mt-3">
 
 
@@ -107,16 +107,19 @@
                              <% end %>
 
                                 </div>
-                                <% end %>
+                           <% end %>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <% end %>                                  
+                     </div>                        
                     </div>
-                  </div>
+             </div>
+           </div>
+         </div>
         </div>
+      </div>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
