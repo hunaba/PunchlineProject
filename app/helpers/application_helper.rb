@@ -3,7 +3,8 @@ module ApplicationHelper
         p_low = punchline.lowfive
         p_high = punchline.highfive
         p_dble = punchline.dblehighfive
-        
+
+            
         if p_low > p_high && p_low > p_dble
             return "low"
         elsif p_high > p_low && p_high > p_dble
