@@ -5,7 +5,7 @@
   <div class="container h-100">
 	<div class="blog-banner">
 	  <div class="text-center">
-		<h1>Inscription</h1>
+		<h1>Inscris-toi !</h1>
 	  </div>
     </div>
   </div>
@@ -21,7 +21,7 @@
 		  <div class="hover">
 				<div class="col-lg-6">
 					<div class="login_form_inner register_form_inner">
-						<h3>Create an account</h3>
+						<h3>Crée un compte</h3>
             <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'row login_form', id:"register_form") do |f| %>
            <%= render "devise/shared/error_messages", resource: resource %>	
 							<div class="col-md-12 form-group">
@@ -44,10 +44,10 @@
 						<div class="creat_account">
 						  </div>
             </div>
-              <em> By clicking on Sign up, you accept our <a href="">Terms and Conditions</a>.</em>
+              <!--<em> By clicking on Sign up, you accept our <a href="">Terms and Conditions</a>.</em>-->
              <br>
 							<div class="col-md-12 form-group action">
-             <%= f.submit "Sign up" , class:"button button-register w-100" %>-->
+             <%= f.submit "Sign up" , class:"button button-register w-100" %> 
               
 							</div>
 					<% end %>
