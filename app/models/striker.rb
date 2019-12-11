@@ -4,6 +4,9 @@ class Striker < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+      validates :name, presence: true
+      validates :email, presence: true
+
   has_many :likes, dependent: :destroy
 
   after_create :welcome_send

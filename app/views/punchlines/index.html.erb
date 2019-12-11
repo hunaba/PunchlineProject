@@ -95,9 +95,17 @@
                                     <a class="mr-1">#bla</a>
                                 </div>
                                 <div class="col-lg-3 text-right">
-                                    <a class="mr-1"><i class="fas fa-hand-middle-finger"></i><%= button_to 'Like', punchlines_likes_path(@post), method: :post %></a>
-                                    <a class="mr-1"><i class="far fa-hand-paper"></i><%= button_to 'Like', punchlines_likes_path(@post), method: :post %></a>
-                                    <a class="mr-1"><i class="far fa-hand-rock"></i><%= button_to 'Like', punchlines_likes_path(@post), method: :post %></a>
+
+                             <% if current_striker != nil %>
+                                <a class="mr-1"><i class="fas fa-hand-middle-finger"></i><%= button_to 'Like', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
+                                <a class="mr-1"><i class="far fa-hand-paper"></i><%= button_to 'Like', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
+                                <a class="mr-1"><i class="far fa-hand-rock"></i><%= button_to 'Like', punchlines_likes_path(@punchline), method: :post, remote: true %></a> 
+                             <% else %>
+                                <a class="mr-1"><i class="fas fa-hand-middle-finger"></i></a>
+                                <a class="mr-1"><i class="far fa-hand-paper"></i></a>
+                                <a class="mr-1"><i class="far fa-hand-rock"></i></a>
+
+                             <% end %>
                                 </div>
                               </div>
                             </div>
