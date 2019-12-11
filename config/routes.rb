@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   get 'punchlinersS', to: "punchliners#index", as: 'punchliners_index'
   get 'hashtagsS', to: "hashtags#index", as: 'hashtags_index'
+  get 'termsconditions', to: "terms#index", as: 'terms'
 
   resource :hashtag, only: [:show]
 
