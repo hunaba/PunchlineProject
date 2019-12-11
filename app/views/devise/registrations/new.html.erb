@@ -22,10 +22,17 @@
 						<h3>Create an account</h3>
             <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'row login_form', id:"register_form") do |f| %>
            <%= render "devise/shared/error_messages", resource: resource %>	
+
+           		<div class="col-md-12 form-group">
+              <%= f.label :name, "Blazz" %><br />
+          <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control", placeholder:"Ton Blazz", onfocus:"this.placeholder = ''", onblur:"this.placeholder = 'Blazz'" %>		
+               </div>
+
 							<div class="col-md-12 form-group">
               <%= f.label :email, "Email" %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder:"Email Address", onfocus:"this.placeholder = ''", onblur:"this.placeholder = 'Email Address'" %>		
               </div>
+
               <div class="col-md-12 form-group">
               <%= f.label :password %>
           <% if @minimum_password_length %>
