@@ -33,6 +33,7 @@ class LikesController < ApplicationController
 	end
 
 	def find_punchline
+		puts "#{params}"
 		@punchline = Punchline.find(params[:punchline_id])
 	end
 end
