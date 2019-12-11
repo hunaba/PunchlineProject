@@ -5,9 +5,9 @@
             <h1>Punchliner</h1>
             <h3>Ici, exceptionnellement...plus c'est court, mieux c'est !</h3>
 
-
+            <% if punchliner_signed_in? %>
              <button type="button" class="btn btn-primary" id="edit" data-toggle="modal" data-target="#exampleModalCenter">   Editer sa punchline    </button>
-            
+            <% end %>
             <div class="modal fade text-dark" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -35,24 +35,26 @@
             </div>
         </div>
         <div class="container-fluide mb-5">
-                <h1 class="text-center mt-3 text-white">Le Ring</h1>
+                <h1 class="text-center mt-3 mb-3 text-white">Le Ring</h1>
 
 
                 <ul class="nav justify-content-center">
                   <li class="nav-item">
-                    <a class="nav-link active btn btn-secondary mr-2" type="button" href="<%= punchliners_index_path %>">Par Auteur</a>
+                    <button class="nav-link btn list-button mr-2" type="button" href="<%= punchliners_index_path %>">Par Auteur</button>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn btn-secondary mr-2" type="button"  href="<%= hashtags_index_path %>">par Thème</a>
+
+                    <button class="nav-link btn list-button mr-2" type="button"  href="#">par Thème</button>
+
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn btn-secondary mr-2" type="button" href="#">Aléatoire</a>
+                    <button class="nav-link btn list-button mr-2" type="button" href="#">Aléatoire</button>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn btn-secondary" type="button" href="#">+Récent</a>
+                    <button class="nav-link btn list-button" type="button" href="#">+Récent</button>
                   </li>
                 </ul>
-                  <div class="container">        
+                  <div class="container mt-5">        
                     <div class="column d-flex flex-column">
                     <% @punchlines.each_with_index do |one_punch, k| %>
                       <% if k%2 == 0 %>  
@@ -63,7 +65,7 @@
                       <% end %>
                         <div class="bs-component">
                         
-                          <div class="card">
+                          <div class="card card-home">
                       
                             <div class="card-body">
                               <div class="d-flex justify-content-between">
@@ -87,18 +89,25 @@
                                    <%= image_tag('Smyhavy.png', draggable: "true", id: "logo") %> 
                                   </div>
                               </div>
-                              <a class="btn btn-info mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
+                              <a class="btn bouton-cart mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
                               <div class="d-flex justify-content-between mt-3">
-                                <div class="col-lg-3 d-flex pl-0">
-                                    <a class="mr-1">#bla</a>
-                                    <a class="mr-1">#bla</a>
-                                    <a class="mr-1">#bla</a>
-                                </div>
+
+
                                 <div class="col-lg-3 text-right">
-                                    <a class="mr-1"><i class="fas fa-hand-middle-finger"></i><%= button_to 'Like', punchlines_likes_path(@post), method: :post %></a>
-                                    <a class="mr-1"><i class="far fa-hand-paper"></i><%= button_to 'Like', punchlines_likes_path(@post), method: :post %></a>
-                                    <a class="mr-1"><i class="far fa-hand-rock"></i><%= button_to 'Like', punchlines_likes_path(@post), method: :post %></a>
+
+                             <% if current_striker != nil %>
+                                <a class="mr-1"><i class="fas fa-hand-middle-finger"></i><%= link_to 'LF', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
+                                <a class="mr-1"><i class="far fa-hand-paper"></i><%= link_to 'HF', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
+                                <a class="mr-1"><i class="far fa-hand-rock"></i><%= link_to 'DHF', punchlines_likes_path(@punchline), method: :post, remote: true %></a> 
+                             <% else %>
+                                <a class="mr-1"><i class="fas fa-hand-middle-finger"></i></a>
+                                <a class="mr-1"><i class="far fa-hand-paper"></i></a>
+                                <a class="mr-1"><i class="far fa-hand-rock"></i></a>
+
+                             <% end %>
+
                                 </div>
+                                <% end %>
                               </div>
                             </div>
                           </div>
