@@ -9,7 +9,7 @@ class Punchliner < ApplicationRecord
 
   has_many :punchlines
 
-  after_create :welcome_send
+
 
 
 
