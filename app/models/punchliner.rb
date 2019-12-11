@@ -14,4 +14,9 @@ class Punchliner < ApplicationRecord
   def welcome_send
     PunchlinerMailer.welcome_email(self).deliver_now
   end
+
+  def gravatar_url
+  gravatar_id = Digest::MD5::hexdigest(email).downcase
+  "https://gravatar.com/avatar/#{gravatar_id}.png"
+end
 end
