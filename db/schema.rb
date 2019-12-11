@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(version: 2019_12_10_141723) do
   end
 
   create_table "likes", force: :cascade do |t|
-    t.bigint "punchline_id"
     t.bigint "striker_id"
+    t.bigint "punchline_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["punchline_id"], name: "index_likes_on_punchline_id"
@@ -112,8 +112,6 @@ ActiveRecord::Schema.define(version: 2019_12_10_141723) do
     t.index ["reset_password_token"], name: "index_strikers_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "likes", "punchlines"
-  add_foreign_key "likes", "strikers"
   add_foreign_key "link_hashtag_punchlines", "hashtags"
   add_foreign_key "link_hashtag_punchlines", "punchlines"
   add_foreign_key "room_messages", "punchliners"
