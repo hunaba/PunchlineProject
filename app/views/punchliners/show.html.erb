@@ -2,7 +2,7 @@
 <script src="https://kit.fontawesome.com/0f6d2693a2.js" crossorigin="anonymous"></script>
 
 
-<div class="card profil mb-3" style="max-width: 840px;">
+<div class="card  profil mb-3" style="max-width: 840px;">
 <div class="row no-gutters">
     <div class="col-md-4">
     <%= image_tag('Smyhavy.png', draggable: "true", id: "logo2") %>    
@@ -29,16 +29,16 @@
                       <% end %>
                         <div class="bs-component">
                         <% if rate(one_punch) == "low" %>
-                          <div class="card border green border-success">
+                          <div class="card card-profil border green border-success">
                         <% end %>
                         <% if rate(one_punch) == "high" %>
-                          <div class="card border yellow border-warning">
+                          <div class="card card-profil  border yellow border-warning">
                         <% end %>
                         <% if rate(one_punch) == "double" %>
-                          <div class="card border red border-danger">
+                          <div class="card card-profil  border red border-danger">
                         <% end %>
                         <% if rate(one_punch) == "no-like" %>
-                          <div class="card border no-like border-white">
+                          <div class="card card-profil  border no-like border-white">
                         <% end %>
                             <div class="card-body">
                               <i class="fas fa-quote-right"></i>
@@ -50,11 +50,13 @@
                                     <a class="mr-1">#bla</a>
                                     <a class="mr-1">#bla</a>
                                 </div>
+                                <% if striker_signed_in? || hunter_signed_in? %>
                                 <div class="col-lg-3 text-right">
-                                    <a class="mr-1"><i class="fas fa-hand-middle-finger"></i></a>
-                                    <a class="mr-1"><i class="far fa-hand-paper"></i></a>
-                                    <a class="mr-1"><i class="far fa-hand-rock"></i></a>
+                                    <a class="mr-1" href="<%= punchlines_likes_path(@post) %>" method: :post ><i class="fas fa-hand-middle-finger"></i></a>
+                                    <a class="mr-1" href="<%= punchlines_likes_path(@post) %>" method: :post ><i class="far fa-hand-paper"></i></a>
+                                    <a class="mr-1" href="<%= punchlines_likes_path(@post) %>" method: :post ><i class="far fa-hand-rock"></i></a>
                                 </div>
+                                <% end %>
                               </div>
                             </div>
                           </div>

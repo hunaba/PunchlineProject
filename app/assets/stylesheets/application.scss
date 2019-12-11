@@ -26,8 +26,7 @@
 //     background-size: cover;
 // }
 
-body{
-    
+body{  
     background-color: #141204;
 }
 
@@ -42,11 +41,13 @@ body{
     padding-top: 400px;
 }
 
-.card{
+.card-home{
     border: 1px solid black;
+    border-radius: 30px;
     // background-color: rgba(0, 0, 0, 0.7);
     background-color: #1E1B1E;
     color: white;
+    box-shadow: 2.3px 2.3px 2.3px #d9d9d9;
 }
 
 #logo{
@@ -85,10 +86,55 @@ body{
     border-radius: 50%;
 }
 
+.connect-button{
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+}
+
+.connect-button:hover{
+    color: black;
+}
+
+.list-button{
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+    color: white;
+}
+
+.list-button:hover{
+    color: black;
+}
+
+.bouton-cart{
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+    color: white;
+}
+
+.bouton-cart:hover{
+    color: black;
+}
+
+.bouton-cart:hover{
+    background: linear-gradient(to left, #ee4a83, #fc7435);
+}
+
+.button-account{
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+    color: white;
+}
+
+.button-account:hover{
+    color: black;
+}
+
 #edit{
     position: fixed;
-    top: 2em;
+    top: 6em;
     left: 1em;
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+    border: none;
+}
+
+#edit:hover{
+    color: black;
 }
 
 
@@ -101,4 +147,12 @@ body{
 #logo2{
     max-width: 100%;
     max-height: 100%;
+}
+
+.card-profil{
+    border: 1px solid black;
+    border-radius: 30px;
+    // background-color: rgba(0, 0, 0, 0.7);
+    background-color: #1E1B1E;
+    color: white;
 }

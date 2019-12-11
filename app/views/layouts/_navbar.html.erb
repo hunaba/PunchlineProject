@@ -3,7 +3,7 @@
   <% if current_punchliner == nil && current_striker == nil && current_hunter == nil%>
   <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-            <div>Se connecter</div>     <!-- il faut mettre l'image en booooooocoup plus petit....deso -->
+            <button class=" btn text-white connect-button">Se connecter</button>     <!-- il faut mettre l'image en booooooocoup plus petit....deso -->
           </a>
       <div class="dropdown-menu" x-placement="bottom-start">
           <a class="dropdown-item" href="<%= new_punchliner_registration_path %>">Se connecter en tant que Punchliner</a>
@@ -18,12 +18,12 @@
     <div class="nav-item dropdown">
 
        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
-       <button type="button" class="btn btn-primary">Mon Compte</button>
+       <button type="button" class="btn button-account">Mon Compte</button>
        </a>
 
        <div class="dropdown-menu" x-placement="bottom-start">
          <a class="dropdown-item" href="<%= edit_punchliner_registration_path %>">Profil</a>
-         <a class="dropdown-item" <%= link_to('Deconnexion', destroy_punchliner_session_path, method: :delete) %>> </a>     
+         <a class="dropdown-item" <%= link_to('Deconnexion', destroy_punchliner_session_path, method: :delete) %>></a>     
        </div>
 
     </div>
