@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :room_messages
-  resources :rooms
   devise_for :hunters
   devise_for :strikers
   devise_for :punchliners
@@ -11,16 +9,16 @@ Rails.application.routes.draw do
   	resource :likes
   end
   resource :punchliners
+  resources :room_messages
+  resources :rooms
+  resource :hashtag, only: [:show]
 
   get 'punchlinersS', to: "punchliners#index", as: 'punchliners_index'
   get 'hashtagsS', to: "hashtags#index", as: 'hashtags_index'
   get 'termsconditions', to: "terms#index", as: 'terms'
 
-  resource :hashtag, only: [:show]
+ 
 
 root to: "punchlines#index" 
-root controller: :rooms, action: :index
-resources :room_messages
-resources :rooms
 
 end

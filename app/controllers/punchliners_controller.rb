@@ -15,7 +15,7 @@ class PunchlinersController < ApplicationController
 
 
 	def create
-    @punchliner = Punchliner.new(params[:punchliner])
+    @punchliner = Punchliner.new(params[:name, :email, :password])
     @punchliner.save
  
     #respond_to do |format|
