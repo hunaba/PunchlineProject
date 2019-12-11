@@ -1,20 +1,10 @@
-RAJOUTE DES TRUCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TURCS
-RAGE AOUT DÉ TURCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TURCS
-RAGE AOUT DÉ TURCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TURCS
-RAGE AOUT DÉ TURCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TURCS
-RAGE AOUT DÉ TURCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TRUCS
-RAJOUTE DES TURCS
-RAGE AOUT DÉ TURCS
+ <div class="container-fluide mb-5">
+                <h1 class="text-center mt-3 text-white">Par thème</h1>
+                <ul class="nav justify-content-center">
+                <% @hashtags.each_with_index do |hashtag| %>
+                  <li class="nav-item">
+                    <a class="nav-link active btn btn-secondary mr-2" type="button" <%= link_to hashtag.title, hashtag_path(hashtag.title)%></a>
+                  </li>
+                <% end %>
+                </ul> 
+</div>
