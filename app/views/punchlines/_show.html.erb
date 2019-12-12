@@ -1,0 +1,44 @@
+ <div class="card-body">
+       <div class="d-flex justify-content-between">
+             <div class="col-8">
+                   <i class="fas fa-quote-right"></i>
+                   <h5 class="card-text text-white"><%= @punchline.content %></h5>
+             </div>
+
+                 <% if rate(@punchline) == "low" %>
+                 <div class="col-2 avatar-green">
+                 <% end %>
+                 <% if rate(@punchline) == "high" %>
+                 <div class="col-2 avatar-yellow">
+                 <% end %>
+                 <% if rate(@punchline) == "double" %>
+                 <div class="col-2 avatar-red">
+                 <% end %>
+                 <% if rate(@punchline) == "no-like" %>
+                     <div class="col-2 avatar">
+                                <% end %>
+                                <%= image_tag('Smyhavy.png', draggable: "true", id: "logo") %> 
+                     </div>
+             </div>
+           </div>
+         </div>
+
+          <a class="btn btn-info mt-3" <%= link_to @punchline.punchliner.name, punchliners_id_path(@punchline.punchliner.id)%>></a>
+             <div class="d-flex justify-content-between mt-3">
+                    <div class="col-lg-3 d-flex pl-0">
+                                    <a class="mr-1">#bla</a>
+                                    <a class="mr-1">#bla</a>
+                                    <a class="mr-1">#bla</a>
+                    </div>
+                    <div class="col-lg-3 text-right">
+
+                          <a class="mr-1"><i class="fas fa-hand-middle-finger"></i><%= button_to 'Like', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
+                          <a class="mr-1"><i class="far fa-hand-paper"></i><%= button_to 'Like', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
+                          <a class="mr-1"><i class="far fa-hand-rock"></i><%= button_to 'Like', punchlines_likes_path(@punchline), method: :post, remote: true %></a> 
+                   </div>
+             </div>
+      </div>
+</div>
+
+
+

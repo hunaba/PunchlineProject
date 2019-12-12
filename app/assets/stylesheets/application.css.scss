@@ -10,23 +10,26 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *= require_tree 
  *= require_self
  */
 
- 
+@import 'bootstrap';
+@import 'font-awesome';
 
-//  body
-// {
-//     background: url("photo_fond.jpeg");
-//     background-repeat: no-repeat;
-//     background-attachment : fixed;
-//     background-size: cover;
-// }
+@font-face {
+  font-family: "MODULAR-14";
+  src: url("MODULAR-14.otf");
+};
+
 
 body{
-    
-    background-color: #141204;
+font-family: "MODULAR-14";
+background-image: linear-gradient(to bottom, #000000, #0d0a09, #151210, #1a1915, #1e1f1a);
+}
+
+* {
+font-family: "MODULAR-14";
 }
 
 #logo-accueil{
@@ -40,11 +43,13 @@ body{
     padding-top: 400px;
 }
 
-.card{
+.card-home{
     border: 1px solid black;
+    border-radius: 30px;
     // background-color: rgba(0, 0, 0, 0.7);
     background-color: #1E1B1E;
     color: white;
+    box-shadow: 2.3px 2.3px 2.3px #d9d9d9;
 }
 
 #logo{
@@ -83,10 +88,55 @@ body{
     border-radius: 50%;
 }
 
+.connect-button{
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+}
+
+.connect-button:hover{
+    color: black;
+}
+
+.list-button{
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+    color: white;
+}
+
+.list-button:hover{
+    color: black;
+}
+
+.bouton-cart{
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+    color: white;
+}
+
+.bouton-cart:hover{
+    color: black;
+}
+
+.bouton-cart:hover{
+    background: linear-gradient(to left, #ee4a83, #fc7435);
+}
+
+.button-account{
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+    color: white;
+}
+
+.button-account:hover{
+    color: black;
+}
+
 #edit{
     position: fixed;
-    top: 2em;
+    top: 6em;
     left: 1em;
+    background: linear-gradient(to right, #ee4a83, #fc7435);
+    border: none;
+}
+
+#edit:hover{
+    color: black;
 }
 
 

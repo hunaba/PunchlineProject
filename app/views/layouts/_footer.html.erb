@@ -1,21 +1,59 @@
-<footer class="footer rest-of-page">
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row d-flex">
-        <p class="col-lg-12 ul-footer">
-         <ul class="ul-footer"> A propos</ul>
-         <ul class="footer-text"> Nous contacter</ul>
-         <ul class="footer-text"> <%= link_to "Terms and Conditions", terms_path, data: { turbolinks: false } %></ul>
-        </p>
-        <p class="col-lg-12 footer-text text-center">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          Copyright 2019 &copy;All rights reserved
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        </p>
-        <p class="col-lg-12 footer-text text-center">
-        Projet Final THP de : Alexandre, Gaëlle, Hadrien, Cécile.
-        </p>
+<!-- Footer -->
+<footer class="fixed-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3 center">
+          <a href="#!" class="text-white">A propos</a>
+        </h6>
       </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3 center">
+        <div id="logo-acueil">
+          <a href="#!" class="text-white">Contact</a>
+        </h6>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3 mx-auto">
+        <div id="logo-acueil"><a href="<%= root_path %>"><%= image_tag("logo.svg") %></a>
+      </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3 center">
+          <a href="#!" class="text-white">Presse</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3 center">
+          <a class="text-white" <%= link_to "Confidentialite", terms_path, data: { turbolinks: false } %></a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
     </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="text-white left">© 2019 Copyright
+        <a><%= image_tag("lauriers.png", size: "30x30", class: "lauriers") %></a>
+        Federation mdr
   </div>
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
