@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_09_143927) do
+ActiveRecord::Schema.define(version: 2019_12_10_141723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(version: 2019_12_09_143927) do
   end
 
   create_table "likes", force: :cascade do |t|
-    t.bigint "punchline_id"
     t.bigint "striker_id"
+    t.bigint "punchline_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["punchline_id"], name: "index_likes_on_punchline_id"
@@ -81,6 +81,23 @@ ActiveRecord::Schema.define(version: 2019_12_09_143927) do
     t.index ["punchliner_id"], name: "index_punchlines_on_punchliner_id"
   end
 
+  create_table "room_messages", force: :cascade do |t|
+    t.bigint "room_id"
+    t.bigint "punchliner_id"
+    t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["punchliner_id"], name: "index_room_messages_on_punchliner_id"
+    t.index ["room_id"], name: "index_room_messages_on_room_id"
+  end
+
+  create_table "rooms", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_rooms_on_name", unique: true
+  end
+
   create_table "strikers", force: :cascade do |t|
     t.string "name"
     t.string "avatar"
@@ -95,8 +112,8 @@ ActiveRecord::Schema.define(version: 2019_12_09_143927) do
     t.index ["reset_password_token"], name: "index_strikers_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "likes", "punchlines"
-  add_foreign_key "likes", "strikers"
   add_foreign_key "link_hashtag_punchlines", "hashtags"
   add_foreign_key "link_hashtag_punchlines", "punchlines"
+  add_foreign_key "room_messages", "punchliners"
+  add_foreign_key "room_messages", "rooms"
 end

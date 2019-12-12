@@ -272,3 +272,4 @@ Hashtag.create(title: '#IT')
 Hashtag.create(title: '#true')
 Hashtag.create(title: '#bullshit')
 Hashtag.create(title: '#tabou')
+
