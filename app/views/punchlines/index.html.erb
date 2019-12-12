@@ -40,20 +40,22 @@
 
                 <ul class="nav justify-content-center">
                   <li class="nav-item">
-                    <button class="nav-link btn list-button mr-2" type="button" href="<%= punchliners_index_path %>">Par Auteur</button>
+                    <button class="nav-link btn list-button mr-2" type="button" href="<%= punchliners_index_path %>"> Par Auteur </button>
                   </li>
+
                   <li class="nav-item">
-
-                    <button class="nav-link btn list-button mr-2" type="button"  href="#">par Thème</button>
-
+                    <button class="nav-link btn list-button mr-2" type="button"  href="#">Par Thème</button>
                   </li>
+
                   <li class="nav-item">
                     <button class="nav-link btn list-button mr-2" type="button" href="#">Aléatoire</button>
                   </li>
+
                   <li class="nav-item">
                     <button class="nav-link btn list-button" type="button" href="#">+Récent</button>
                   </li>
                 </ul>
+
                   <div class="container mt-5">        
                     <div class="column d-flex flex-column">
                     <% @punchlines.each_with_index do |one_punch, k| %>
@@ -89,7 +91,7 @@
                                    <%= image_tag('Smyhavy.png', draggable: "true", id: "logo") %> 
                                   </div>
                               </div>
-                              <a class="btn bouton-cart mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%>></a>
+                              <a class="btn bouton-cart mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id) %> ></a>
                               <div class="d-flex justify-content-between mt-3">
 
 

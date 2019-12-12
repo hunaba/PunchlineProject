@@ -28,6 +28,11 @@
           <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control", placeholder:"Ton Blazz", onfocus:"this.placeholder = ''", onblur:"this.placeholder = 'Blazz'" %>		
                </div>
 
+            <div class="col-md-12 form-group">
+               <%= f.label :description, "Un petit mot sur toi" %><br />
+          <%= f.text_field :description, autofocus: true, autocomplete: "description", class: "form-control", placeholder:"Description", onfocus:"this.placeholder = ''", onblur:"this.placeholder = 'Description'" %>    
+            </div>
+
 							<div class="col-md-12 form-group">
               <%= f.label :email, "Email" %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder:"Email Address", onfocus:"this.placeholder = ''", onblur:"this.placeholder = 'Email Address'" %>		
@@ -49,7 +54,7 @@
 						<div class="creat_account">
 						  </div>
             </div>
-              <!--<em> By clicking on Sign up, you accept our <a href="">Terms and Conditions</a>.</em>-->
+              <em> By clicking on Sign up, you accept our <a href="terms_path">Terms and Conditions</a>.</em>
              <br>
 							<div class="col-md-12 form-group action">
              <%= f.submit "Sign up" , class:"button button-register w-100" %> 
