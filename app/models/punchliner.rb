@@ -20,3 +20,5 @@ class Punchliner < ApplicationRecord
   "https://gravatar.com/avatar/#{gravatar_id}.png"
 end
 end
+
+

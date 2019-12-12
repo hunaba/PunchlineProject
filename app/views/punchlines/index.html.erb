@@ -53,7 +53,7 @@
                   </li>
                 </ul>
                   <div class="container">        
-                    <div class="column d-flex flex-column">
+                  <div class="column d-flex flex-column">
                     <% @punchlines.each_with_index do |one_punch, k| %>
                       <% if k%2 == 0 %>  
                       <div class="col-lg-8 mt-4" data-aos="fade-right">
@@ -65,7 +65,7 @@
                         
                           <div class="card">
                       
-                            <div class="card-body">
+                           <div class="card-body">
                               <div class="d-flex justify-content-between">
                                 <div class="col-8">
                                   <i class="fas fa-quote-right"></i>
@@ -73,13 +73,13 @@
                                 </div>
 
                                 <% if rate(one_punch) == "low" %>
-                                  <div class="col-2 avatar-green">
+                               <div class="col-2 avatar-green">
                                 <% end %>
                                 <% if rate(one_punch) == "high" %>
-                                  <div class="col-2 avatar-yellow">
+                                <div class="col-2 avatar-yellow">
                                 <% end %>
                                 <% if rate(one_punch) == "double" %>
-                                  <div class="col-2 avatar-red">
+                                 <div class="col-2 avatar-red">
                                 <% end %>
                                 <% if rate(one_punch) == "no-like" %>
                                   <div class="col-2 avatar">
@@ -87,9 +87,9 @@
                                    <%= image_tag('Smyhavy.png', draggable: "true", id: "logo") %> 
                                   </div>
                               </div>
-                              <a class="btn btn-info mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
+                              <a class="btn btn-info mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%> ></a>
                               <div class="d-flex justify-content-between mt-3">
-                                <div class="col-lg-3 d-flex pl-0">
+                            <div class="col-lg-3 d-flex pl-0">
                                     <a class="mr-1">#bla</a>
                                     <a class="mr-1">#bla</a>
                                     <a class="mr-1">#bla</a>
@@ -104,8 +104,8 @@
                           </div>
                         </div>
                       </div>
-                      <% end %>                                  
                     </div>
+                      <% end %>                                  
                   </div>
         </div>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
