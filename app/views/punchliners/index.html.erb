@@ -1,8 +1,8 @@
 
 
  <div class="container-fluide mb-5">
-                <h1 class="text-center mt-3 text-white">Par thème</h1>
-                <ul class="nav justify-content-center">
+                <h1 class="text-center mt-3 text-white">Par auteur</h1>
+                <div class="maxlist">
                 <% @punchliners.each_with_index do |punchline| %>
                   <li class="nav-item">
                     <a class="nav-link active btn btn-secondary mr-2" type="button" <%= link_to punchline.name, punchliners_id_path(punchline.id)%></a>
