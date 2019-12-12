@@ -1,8 +1,8 @@
  <div class="container-fluide mb-5">
                 <h1 class="text-center mt-3 text-white">Par thème</h1>
-                <ul class="nav justify-content-center">
+                <div class="maxlist">
                 <% @hashtags.each_with_index do |hashtag| %>
-                  <li class="nav-item">
+                  <li>
                     <a class="nav-link active btn btn-secondary mr-2" type="button" <%= link_to hashtag.title, hashtag_path(hashtag.title)%></a>
                   </li>
                 <% end %>
