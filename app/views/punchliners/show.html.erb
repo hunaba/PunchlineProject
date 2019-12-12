@@ -28,21 +28,22 @@
                       <div class="col-lg-8 mt-4 align-self-end" data-aos="fade-left">
                       <% end %>
                         <div class="bs-component">
-                        <% if rate(one_punch) == "low" %>
-                          <div class="card card-profil border green border-success">
-                        <% end %>
-                        <% if rate(one_punch) == "high" %>
-                          <div class="card card-profil  border yellow border-warning">
-                        <% end %>
-                        <% if rate(one_punch) == "double" %>
-                          <div class="card card-profil  border red border-danger">
-                        <% end %>
-                        <% if rate(one_punch) == "no-like" %>
-                          <div class="card card-profil  border no-like border-white">
-                        <% end %>
+                          <div class="card card-profil">
+                        
                             <div class="card-body">
                               <i class="fas fa-quote-right"></i>
-                              <h5 class="card-text text-white"><%= one_punch.content %></h5>
+
+                              <% if rate(one_punch) == "low" %>
+                                <i class="fas fa-hand-middle-finger rate"></i>
+                              <% end %>
+                              <% if rate(one_punch) == "high" %>
+                                <i class="far fa-hand-paper rate"></i>
+                              <% end %>
+                              <% if rate(one_punch) == "double" %>
+                                <i class="far fa-hand-rock rate"></i>
+                              <% end %>
+                              
+                              <h5 class="card-text"><%= one_punch.content %></h5>
                               
                               <div class="d-flex justify-content-between mt-3">
                                 <div class="col-lg-3 d-flex pl-0">
@@ -50,13 +51,15 @@
                                     <a class="mr-1">#bla</a>
                                     <a class="mr-1">#bla</a>
                                 </div>
-                                <% if striker_signed_in? || hunter_signed_in? %>
+                                
                                 <div class="col-lg-3 text-right">
-                                    <a class="mr-1" href="<%= punchlines_likes_path(@post) %>" method: :post ><i class="fas fa-hand-middle-finger"></i></a>
-                                    <a class="mr-1" href="<%= punchlines_likes_path(@post) %>" method: :post ><i class="far fa-hand-paper"></i></a>
-                                    <a class="mr-1" href="<%= punchlines_likes_path(@post) %>" method: :post ><i class="far fa-hand-rock"></i></a>
+                                  <% if current_striker != nil %>
+                                      <a class="mr-1 text-dark"><i class="fas fa-hand-middle-finger"></i><%= link_to '', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
+                                      <a class="mr-1 text-dark"><i class="far fa-hand-paper"></i><%= link_to '', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
+                                      <a class="mr-1 text-dark"><i class="far fa-hand-rock"></i><%= link_to '', punchlines_likes_path(@punchline), method: :post, remote: true %></a> 
+                                  <% end %>
                                 </div>
-                                <% end %>
+                                
                               </div>
                             </div>
                           </div>
