@@ -12,14 +12,18 @@
  *
  *= require_tree 
  *= require_self
+ *= require_PunchlineProject
  */
+
+= require_tree 
+= require_self
 
 @import 'bootstrap';
 @import 'font-awesome';
 
 @font-face {
   font-family: "MODULAR-14";
-  src: url(asset-path('fonts/MODULAR-14.otf'));
+  src: url(../fonts/MODULAR-14.otf'));
 };
 
 
