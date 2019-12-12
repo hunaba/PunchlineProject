@@ -2,8 +2,8 @@
 <script src="https://kit.fontawesome.com/0f6d2693a2.js" crossorigin="anonymous"></script>
 <body>
         <div id="header" class="text-center text-white">
-            <h1>Punchliner</h1>
-            <h3>Ici, exceptionnellement...plus c'est court, mieux c'est !</h3>
+            <h1 style="font-size:1000%;">Mange tes mots</h1>
+            <h3 style="font-size:300%;">Premier site de punchlines de qualites</h3>
 
             <% if punchliner_signed_in? %>
              <button type="button" class="btn btn-primary" id="edit" data-toggle="modal" data-target="#exampleModalCenter"> Editer sa punchline </button>
@@ -35,24 +35,24 @@
             </div>
         </div>
         <div class="container-fluide mb-5">
-                <h1 class="text-center mt-3 mb-3 text-white">Le Ring</h1>
+              <!--  <h1 class="text-center mt-3 mb-3 text-white" style="font-size:500%;">Le Ring</h1> -->
 
 
                 <ul class="nav justify-content-center">
                   <li class="nav-item">
-                    <button class="nav-link btn list-button mr-2" type="button" href="<%= punchliners_index_path %>"> Par Auteur </button>
+                    <a class="nav-link btn list-button mr-2" type="button" href="<%= punchliners_index_path %>"> Par Auteur </a>
                   </li>
 
                   <li class="nav-item">
-                    <button class="nav-link btn list-button mr-2" type="button"  href="#">Par Thème</button>
+                    <button class="nav-link btn list-button mr-2" type="button"  href="#">Par Theme</button>
                   </li>
 
                   <li class="nav-item">
-                    <button class="nav-link btn list-button mr-2" type="button" href="#">Aléatoire</button>
+                    <button class="nav-link btn list-button mr-2" type="button" href="#">Aleatoire</button>
                   </li>
 
                   <li class="nav-item">
-                    <button class="nav-link btn list-button" type="button" href="#">+Récent</button>
+                    <button class="nav-link btn list-button" type="button" href="#">+Recent</button>
                   </li>
                 </ul>
                   <div class="container">        
@@ -99,7 +99,7 @@
                                     <a class="mr-1">#bla</a>
                                     <a class="mr-1">#bla</a>
                                 </div>
-                              <a class="btn bouton-cart mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id) %> ></a>
+                             <!-- <a class="btn bouton-cart mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id) %> ></a> -->
                               <div class="d-flex justify-content-between mt-3">
 
                                 <div class="col-lg-3 text-right">
@@ -130,9 +130,7 @@
              </div>
            </div>
          </div>
-          <% end %>
         </div>
-      </div>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
