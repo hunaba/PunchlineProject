@@ -3,6 +3,64 @@ $primary: #ae9fec;
 $secondary: #d19ac1;
 $white: #ffffff;
 
+
+
+img
+{
+	max-width: 100%;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, +45%);
+    width:100%;
+}
+
+.left {
+    transform: translate(+25.5%, 0);
+}
+
+footer
+{
+	display: block;
+	width: 100%;
+  padding: 10px;  
+  display: flex;
+  align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.maxlist {
+max-width: 190px;
+margin: 0 auto;
+}
+
+logo-acueil {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.lauriers {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.vertical-align { 
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.fixed-top-2 {
+    margin-top: 56px;
+}
+
 .chat {
   border: 1px solid lighten($secondary, 40%);
   background: lighten($secondary, 50%);
