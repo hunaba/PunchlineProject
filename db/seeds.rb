@@ -16,7 +16,7 @@ Hashtag.destroy_all
 require 'faker'
 
 ## PUNCHLINERS ##
-Punchliner.create(name: "Nicolle", 
+Punchliner.create(name: "Mezolle", 
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	description: "J'aime les gateaux nantais. Le blog de Pop-up est imbitable.",
 	email: "cecile.mez@hotmail.fr",
