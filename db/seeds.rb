@@ -16,86 +16,82 @@ Hashtag.destroy_all
 require 'faker'
 
 ## PUNCHLINERS ##
-Punchliner.create(name: "Jitsi King", 
+Punchliner.create(name: "Jitsi King", #1
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	description: "Giteub",
 	email: "cecile.mez@hotmail.fr",
 	password: "123456")
+	
 
-Punchliner.create(name: "Stormy Bugsy", 
+Punchliner.create(name: "Stormy Bugsy", #2
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "youpli@youpla.fr",
 	password: "123333")
 	#description: Faiseur d'orages
 
-Punchliner.create(name: "Ass Ange", 
+
+Punchliner.create(name: "Ass Ange", #3
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "kikou@kikou.fr",
 	password: "122222")
 	#description: Lanceur d'alertes
 
-Punchliner.create(name: "Boris Goudounov", 
+Punchliner.create(name: "Boris Goudounov", #4
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "yoyo@yoyo.fr",
 	password: "1111111")
 	#description: Tsar du Temps des Troubles	
 
-Punchliner.create(name: "Ti punch", 
+Punchliner.create(name: "Ti punch", #5
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "salut@salut.fr",
 	password: "123444")
 	#description: Cocktail à base de seum
 
-Punchliner.create(name: "Ya koi", 
+Punchliner.create(name: "Ya koi", #6
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "yakoi@yakoi.fr",
 	password: "123455")
 	#description: Fédération du manque de respect
 
-Punchliner.create(name: "No-life Battery Life", 
-	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
-	email: "coucou@coucou.fr",
-	password: "123555")
-	#description: Plus acéré qu'acer
-
-Punchliner.create(name: "Booba", 
+Punchliner.create(name: "Booba", #7
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
 	password: "1234666")
 	#description: Saddam hauts de Seine
 
-Punchliner.create(name: "Shay", 
+Punchliner.create(name: "Shay", #8
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
 	password: "1234677")
 	#description: Torchon dans la 'teille
 
 
-Punchliner.create(name: "Sigisbé Sigismondi", 
+Punchliner.create(name: "Sigisbé Sigismondi", #9
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
 	password: "1234669")
 	#description: 66b
 
-Punchliner.create(name: "Virginie Despentes", 
+Punchliner.create(name: "Virginie Despentes", #10
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
 	password: "1334669")
 	#description: Chevalier de la verve	
 
-Punchliner.create(name: "Nekfeu", 
+Punchliner.create(name: "DZ", #11
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
 	password: "1334699")
 	#description: ####	
 
-Punchliner.create(name: "NTM", 
+Punchliner.create(name: "NTM", #12
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
 	password: "1334699")
 	#description: Le Suprême
 
-Punchliner.create(name: "Lyonzon", 
+Punchliner.create(name: "Lyonzon", #13
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
 	email: "b2o@b2o.fr",
 	password: "1334699")
@@ -103,12 +99,21 @@ Punchliner.create(name: "Lyonzon",
 
 ## PUNCHLINES ##
 
-Punchline.create(content: "Le monde est regit de façon binaire, suffit pas de poser le pied dessus pour etre lunaire", 
-	punchliner_id: 13,
+Punchline.create(content: "Je ne push jamais le premier soir ",
+	punchliner_id: 1,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
+
+Punchline.create(content: "Pisseur de code à la 42 ",
+	punchliner_id: 1,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+
 
 
 Punchline.create(content: "Issu d'une jeunesse qui m'choque, attire par le crime, genre
@@ -121,7 +126,7 @@ Si j'me flingue en live, combien de screenshots ?",
 
 
 Punchline.create(content: "Une biatch de magazine, beaucoup plus bonne que la plus bonne de tes copines", 
-	punchliner_id: 12,
+	punchliner_id: 11,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
@@ -137,7 +142,7 @@ Punchline.create(content: "Pas de solution donnee, mon plafond reste ton planche
 
 
 Punchline.create(content: "On croit que les feministes trop radicales haïssent les hommes mais ce qu'elles detestent en realite ce snt les femmes qui savent vivre avec", 
-	punchliner_id: 10,
+	punchliner_id: 11,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
@@ -145,34 +150,26 @@ Punchline.create(content: "On croit que les feministes trop radicales haïssent 
 
 
 Punchline.create(content: ",Moins de male, moins de guerre ",
-	punchliner_id: 10,
+	punchliner_id: 11,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
 Punchline.create(content: "C'etait une véritable religion le silence chez cet homme, on appelle ça de la pudeur, mais cela releve plutot de la constipation verbale ",
-	punchliner_id: 10,
+	punchliner_id: 11,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
 Punchline.create(content: "Mon desir pour toi s'est ecoule comme le sang de mon vagin ",
-	punchliner_id: 9,
+	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-
-
-Punchline.create(content: "Je ne push jamais le premier soir ",
-	punchliner_id: 1,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
 
 
 Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix de l'immobilier",
@@ -211,15 +208,43 @@ Punchline.create(content: "C'est toujours la meme histoire devant les tenues ble
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "blablabla",
-	punchliner_id: 3,
+Punchline.create(content: "Je range mes poings dans mes poches, j'veux pas rendre le monde encore plus moche",
+	punchliner_id: 11,
 	lowfive: 0,
 	highfive: 0,
 	dblehighfive: 0,
-	points: 15)
+	points: 30)
 
-Punchline.create(content: "blablabla",
-	punchliner_id: 3,
+Punchline.create(content: "Zéro gravité, que de l'attraction",
+	punchliner_id: 11,
+	lowfive: 0,
+	highfive: 0,
+	dblehighfive: 0,
+	points: 30)
+
+Punchline.create(content: "Coeur bunker",
+	punchliner_id: 11,
+	lowfive: 0,
+	highfive: 0,
+	dblehighfive: 0,
+	points: 30)
+
+Punchline.create(content: "Tu pollues l'océan de mes pensées",
+	punchliner_id: 11,
+	lowfive: 0,
+	highfive: 0,
+	dblehighfive: 0,
+	points: 30)
+
+Punchline.create(content: "Glyphosate dans nos larmes ",
+	punchliner_id: 11,
+	lowfive: 0,
+	highfive: 0,
+	dblehighfive: 0,
+	points: 30)
+
+Punchline.create(content: "John Lenine",
+	punchliner_id: 4,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
@@ -255,6 +280,13 @@ Punchline.create(content: "Emile Louis et Image,",
 
 Punchline.create(content: "Suffit pas d'etre pour exister, suffit pas de partir pour disparaitre",
 	punchliner_id: 8,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "Le monde est regit de façon binaire, suffit pas de poser le pied dessus pour etre lunaire", 
+	punchliner_id: 14,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
