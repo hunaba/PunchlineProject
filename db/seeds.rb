@@ -103,7 +103,7 @@ Punchliner.create(name: "Lyonzon",
 
 ## PUNCHLINES ##
 
-Punchline.create(content: "Le monde est régit de façon binaire, suffit pas de poser le pied dessus pour être lunaire", 
+Punchline.create(content: "Le monde est regit de façon binaire, suffit pas de poser le pied dessus pour etre lunaire", 
 	punchliner_id: 13,
 	lowfive: 0,
 	highfive: 2,
@@ -111,7 +111,7 @@ Punchline.create(content: "Le monde est régit de façon binaire, suffit pas de 
 	points: 31)
 
 
-Punchline.create(content: "Issu d'une jeunesse qui m'choque, attiré par le crime, genre
+Punchline.create(content: "Issu d'une jeunesse qui m'choque, attire par le crime, genre
 Si j'me flingue en live, combien de screenshots ?", 
 	punchliner_id: 11,
 	lowfive: 0,
@@ -127,7 +127,7 @@ Punchline.create(content: "Une biatch de magazine, beaucoup plus bonne que la pl
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Pas de solution donnée, mon plafond reste ton plancher", 
+Punchline.create(content: "Pas de solution donnee, mon plafond reste ton plancher", 
 	punchliner_id: 12,
 	lowfive: 0,
 	highfive: 2,
@@ -136,7 +136,7 @@ Punchline.create(content: "Pas de solution donnée, mon plafond reste ton planch
 
 
 
-Punchline.create(content: "On croit que les féministes trop radicales haïssent les hommes mais ce qu'elles détestent en réalité ce snt les femmes qui savent vivre avec", 
+Punchline.create(content: "On croit que les feministes trop radicales haïssent les hommes mais ce qu'elles detestent en realite ce snt les femmes qui savent vivre avec", 
 	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
@@ -144,21 +144,21 @@ Punchline.create(content: "On croit que les féministes trop radicales haïssent
 	points: 31)
 
 
-Punchline.create(content: ",Moins de mâle, moins de guerre ",
+Punchline.create(content: ",Moins de male, moins de guerre ",
 	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "C'était une véritable religion le silence chez cet homme, on appelle ça de la pudeur, mais cela relève plutôt de la constipation verbale ",
+Punchline.create(content: "C'etait une véritable religion le silence chez cet homme, on appelle ça de la pudeur, mais cela releve plutot de la constipation verbale ",
 	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Mon désir pour toi s'est écoulé comme le sang de mon vagin ",
+Punchline.create(content: "Mon desir pour toi s'est ecoule comme le sang de mon vagin ",
 	punchliner_id: 9,
 	lowfive: 0,
 	highfive: 2,
@@ -253,7 +253,7 @@ Punchline.create(content: "Emile Louis et Image,",
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Suffit pas d'être pour exister, suffit pas de partir pour disparaître",
+Punchline.create(content: "Suffit pas d'etre pour exister, suffit pas de partir pour disparaitre",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
