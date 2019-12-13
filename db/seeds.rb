@@ -144,7 +144,7 @@ Punchline.create(content: "On croit que les féministes trop radicales haïssent
 	points: 31)
 
 
-Punchline.create(content: ",Moins de mâle, moins de guerre #??",
+Punchline.create(content: ",Moins de mâle, moins de guerre ",
 	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
@@ -216,7 +216,7 @@ Punchline.create(content: "ipsem lorum ou faux texte latin, lorem ipsum",
 	lowfive: 0,
 	highfive: 0,
 	dblehighfive: 0,
-	points: 00)
+	points: 15)
 
 Punchline.create(content: "Jitsi King, #dev #IT",
 	punchliner_id: 3,
