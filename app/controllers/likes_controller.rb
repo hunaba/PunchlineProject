@@ -4,6 +4,8 @@ class LikesController < ApplicationController
 
 
 	def create
+		puts "#{params}"
+
 	  if already_liked?
 	    flash[:notice] = "T'as cru que c'était open-like ?! "	
 	  else
@@ -34,6 +36,7 @@ class LikesController < ApplicationController
 
 	def find_punchline
 		puts "#{params}"
+		
 		@punchline = Punchline.find(params[:punchline_id])
 	end
 end
