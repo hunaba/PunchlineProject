@@ -9,7 +9,7 @@ class Striker < ApplicationRecord
 
   has_many :likes, dependent: :destroy
 
-  after_create :welcome_send
+ # after_create :welcome_send
 
   def welcome_send
     StrikerMailer.welcome_email(self).deliver_now

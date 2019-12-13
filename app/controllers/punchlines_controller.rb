@@ -36,12 +36,6 @@ before_action :authenticate_punchliner, only: [:new, :edit, :create, :update]
 	   	end
 	  
     redirect_to root_path
-	  #    if @punchline
-		 #     @punchlines = Punchline.all
-      #    render :action => 'show', :id => @punchline.id
-       # else
-        #  redirect_to :action => 'edit'
-        #end
   end
 
  def authenticate_punchliner

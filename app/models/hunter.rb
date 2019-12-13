@@ -7,7 +7,7 @@ class Hunter < ApplicationRecord
       validates :name, presence: true
       validates :email, presence: true
       
-  after_create :welcome_send
+ #  after_create :welcome_send
 
   def welcome_send
     HunterMailer.welcome_email(self).deliver_now
