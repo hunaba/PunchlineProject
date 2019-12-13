@@ -85,7 +85,8 @@
                                 <% if rate(one_punch) == "no-like" %>
                                   <div class="col-2 avatar-white">
                                 <% end %>
-                                   <%= image_tag('Smyhavy.png', draggable: "true", id: "logo") %> 
+                                <img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
+                                /> 
                                   </div>
                               </div>
                                 <a class="btn bouton-cart mt-3" <%= link_to one_punch.punchliner.name, punchliners_id_path(one_punch.punchliner.id)%></a>
