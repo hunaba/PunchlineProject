@@ -114,56 +114,98 @@ Punchline.create(content: "Pisseur de code à la 42 ",
 	points: 31)
 
 
+Punchline.create(content: "On est jamais trahi que par les siens,",
+	punchliner_id: 2,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
 
+Punchline.create(content: "John Lenine",
+	punchliner_id: 4,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
 
-Punchline.create(content: "Issu d'une jeunesse qui m'choque, attire par le crime, genre
-Si j'me flingue en live, combien de screenshots ?", 
-	punchliner_id: 11,
+Punchline.create(content: "Sylvester Staline ",
+	punchliner_id: 4,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
 
-Punchline.create(content: "Une biatch de magazine, beaucoup plus bonne que la plus bonne de tes copines", 
-	punchliner_id: 11,
+Punchline.create(content: "La meuf elle voulait du lait je lui ai dit t'as qu'a te taire, ",
+	punchliner_id: 5,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Pas de solution donnee, mon plafond reste ton plancher", 
-	punchliner_id: 12,
+
+Punchline.create(content: "Emile Louis et Image,",
+	punchliner_id: 6,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
+Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frere quand il est faux",
+	punchliner_id: 7,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "J'les baise mais pas sans leur talons, passe le mot a Cendrillon, ",
+	punchliner_id: 7,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "Trop de blabla sur azerty, va pas trop loin j't'ai averti, ",
+	punchliner_id: 7,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+
+Punchline.create(content: "C'est toujours la meme histoire devant les tenues bleues marines, Tout c'qui te donne de l'espoir c'est le traffic de cocaine ",
+	punchliner_id: 7,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix de l'immobilier",
+	punchliner_id: 7,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+
+Punchline.create(content: "Suffit pas d'etre pour exister, suffit pas de partir pour disparaitre",
+	punchliner_id: 8,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
+
+
+
+Punchline.create(content: "Mon desir pour toi s'est ecoule comme le sang de mon vagin ",
+	punchliner_id: 9,
+	lowfive: 0,
+	highfive: 2,
+	dblehighfive: 5,
+	points: 31)
 
 
 Punchline.create(content: "On croit que les feministes trop radicales haïssent les hommes mais ce qu'elles detestent en realite ce snt les femmes qui savent vivre avec", 
-	punchliner_id: 11,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-
-Punchline.create(content: ",Moins de male, moins de guerre ",
-	punchliner_id: 11,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-Punchline.create(content: "C'etait une véritable religion le silence chez cet homme, on appelle ça de la pudeur, mais cela releve plutot de la constipation verbale ",
-	punchliner_id: 11,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-Punchline.create(content: "Mon desir pour toi s'est ecoule comme le sang de mon vagin ",
 	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
@@ -171,38 +213,15 @@ Punchline.create(content: "Mon desir pour toi s'est ecoule comme le sang de mon 
 	points: 31)
 
 
-
-Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix de l'immobilier",
-	punchliner_id: 8,
+Punchline.create(content: ",Moins de male, moins de guerre ",
+	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-
-Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frere quand il est faux",
-	punchliner_id: 8,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-Punchline.create(content: "J'les baise mais pas sans leur talons, passe le mot a Cendrillon, ",
-	punchliner_id: 8,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-Punchline.create(content: "Trop de blabla sur azerty, va pas trop loin j't'ai averti, ",
-	punchliner_id: 8,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-Punchline.create(content: "C'est toujours la meme histoire devant les tenues bleues marines, Tout c'qui te donne de l'espoir c'est le traffic de cocaine ",
-	punchliner_id: 8,
+Punchline.create(content: "C'etait une véritable religion le silence chez cet homme, on appelle ça de la pudeur, mais cela releve plutot de la constipation verbale ",
+	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
@@ -243,50 +262,26 @@ Punchline.create(content: "Glyphosate dans nos larmes ",
 	dblehighfive: 0,
 	points: 30)
 
-Punchline.create(content: "John Lenine",
-	punchliner_id: 4,
+
+Punchline.create(content: "Une biatch de magazine, beaucoup plus bonne que la plus bonne de tes copines", 
+	punchliner_id: 12,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "On est jamais trahi que par les siens,",
-	punchliner_id: 4,
+
+
+Punchline.create(content: "Pas de solution donnee, mon plafond reste ton plancher", 
+	punchliner_id: 12,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "La meuf elle voulait du lait je lui ai dit t'as qu'a te taire, ",
-	punchliner_id: 5,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-Punchline.create(content: "Sylvester Staline ",
-	punchliner_id: 4,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-Punchline.create(content: "Emile Louis et Image,",
-	punchliner_id: 6,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
-
-Punchline.create(content: "Suffit pas d'etre pour exister, suffit pas de partir pour disparaitre",
-	punchliner_id: 8,
-	lowfive: 0,
-	highfive: 2,
-	dblehighfive: 5,
-	points: 31)
 
 Punchline.create(content: "Le monde est regit de façon binaire, suffit pas de poser le pied dessus pour etre lunaire", 
-	punchliner_id: 14,
+	punchliner_id: 13,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
