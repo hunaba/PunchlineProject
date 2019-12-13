@@ -16,9 +16,9 @@ Hashtag.destroy_all
 require 'faker'
 
 ## PUNCHLINERS ##
-Punchliner.create(name: "Mezolle", 
+Punchliner.create(name: "Jitsi King", 
 	avatar: "https://pickaface.net/gallery/avatar/unr_sample_170130_2257_9qgawp.png",
-	description: "J'aime les gateaux nantais. Le blog de Pop-up est imbitable.",
+	description: "Giteub",
 	email: "cecile.mez@hotmail.fr",
 	password: "123456")
 
@@ -151,14 +151,14 @@ Punchline.create(content: ",Moins de mâle, moins de guerre ",
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "C'était une véritable religion le silence chez cet homme, on appelle ça de la pudeur, mais cela relève plutôt de la constipation verbale #wet",
+Punchline.create(content: "C'était une véritable religion le silence chez cet homme, on appelle ça de la pudeur, mais cela relève plutôt de la constipation verbale ",
 	punchliner_id: 10,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Mon désir pour toi s'est écoulé comme le sang de mon vagin #wet",
+Punchline.create(content: "Mon désir pour toi s'est écoulé comme le sang de mon vagin ",
 	punchliner_id: 9,
 	lowfive: 0,
 	highfive: 2,
@@ -167,7 +167,7 @@ Punchline.create(content: "Mon désir pour toi s'est écoulé comme le sang de m
 
 
 
-Punchline.create(content: "Je ne push jamais le premier soir  #dev #github",
+Punchline.create(content: "Je ne push jamais le premier soir ",
 	punchliner_id: 1,
 	lowfive: 0,
 	highfive: 2,
@@ -175,7 +175,7 @@ Punchline.create(content: "Je ne push jamais le premier soir  #dev #github",
 	points: 31)
 
 
-Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix de l'immobilier #paris #laviechere",
+Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix de l'immobilier",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
@@ -183,14 +183,14 @@ Punchline.create(content: "Je traine en bas de chez toi, je fais chuter le prix 
 	points: 31)
 
 
-Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frère quand il est faux",
+Punchline.create(content: "Faut battre le fer quand il est chaud, abattre le frere quand il est faux",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "J'les baise mais pas sans leur talons, passe le mot à Cendrillon, ",
+Punchline.create(content: "J'les baise mais pas sans leur talons, passe le mot a Cendrillon, ",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
@@ -204,49 +204,49 @@ Punchline.create(content: "Trop de blabla sur azerty, va pas trop loin j't'ai av
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "C'est toujours la même histoire devant les tenues bleues marines, Tout c'qui te donne de l'espoir c'est le traffic de cocaïne ",
+Punchline.create(content: "C'est toujours la meme histoire devant les tenues bleues marines, Tout c'qui te donne de l'espoir c'est le traffic de cocaine ",
 	punchliner_id: 8,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "ipsem lorum ou faux texte latin, lorem ipsum",
+Punchline.create(content: "blablabla",
 	punchliner_id: 3,
 	lowfive: 0,
 	highfive: 0,
 	dblehighfive: 0,
 	points: 15)
 
-Punchline.create(content: "Jitsi King, #dev #IT",
+Punchline.create(content: "blablabla",
 	punchliner_id: 3,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Merge Simpson, #dev #IT",
+Punchline.create(content: "On est jamais trahi que par les siens,",
 	punchliner_id: 4,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "La meuf elle voulait du lait je lui ai dit t'as qu'à te taire, #true",
+Punchline.create(content: "La meuf elle voulait du lait je lui ai dit t'as qu'a te taire, ",
 	punchliner_id: 5,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Sylvester Staline, #people #histoire",
+Punchline.create(content: "Sylvester Staline ",
 	punchliner_id: 4,
 	lowfive: 0,
 	highfive: 2,
 	dblehighfive: 5,
 	points: 31)
 
-Punchline.create(content: "Emile Louis et Image, #people #musique",
+Punchline.create(content: "Emile Louis et Image,",
 	punchliner_id: 6,
 	lowfive: 0,
 	highfive: 2,
