@@ -49,9 +49,9 @@
 
                                 <div class="col-lg-3 text-right">
                                   <% if current_striker != nil %>
-                                      <a class="mr-1 text-dark"><i class="fas fa-hand-middle-finger"></i><%= link_to '', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
-                                      <a class="mr-1 text-dark"><i class="far fa-hand-paper"></i><%= link_to '', punchlines_likes_path(@punchline), method: :post, remote: true %></a>
-                                      <a class="mr-1 text-dark"><i class="far fa-hand-rock"></i><%= link_to '', punchlines_likes_path(@punchline), method: :post, remote: true %></a> 
+                                      <a class="mr-1 text-dark"><i class="fas fa-hand-middle-finger" onclick="alert('Low Five..."></i><%= link_to '', punchlines_likes_path(@one_punch), method: :post, remote: true %></a>
+                                      <a class="mr-1 text-dark"><i class="far fa-hand-paper"  onclick="alert('High Five..."></i><%= link_to '', punchlines_likes_path(@one_punch), method: :post, remote: true %></a>
+                                      <a class="mr-1 text-dark"><i class="far fa-hand-rock"  onclick="alert('DubL High Five..."></i><%= link_to '', punchlines_likes_path(@one_punch), method: :post, remote: true %></a> 
                                   <% end %>
                                 </div>
                                 
